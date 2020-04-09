@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="css/dropzone.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/dropzone.min.js"></script>
+	<!-- <script src="js/moment.js"></script> -->
+	<!-- <script src="js/bootstrap-datepicker.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+		$(function () {
+			$(".datepicker").flatpickr({
+				altInput: true,
+				altFormat: "F j, Y",
+				dateFormat: "Y-m-d",
+			});
+			$(".timepicker").flatpickr({
+				enableTime: true,
+				noCalendar: true,
+				time_24hr: true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification active"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#profileSettingModal"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="content-block">
+				<div class="container">
+					<div class="content-text">
+						<div class="jumbotron border py-4">
+							<article class="text-holder">
+								<h2>Privacy Policy</h2>
+								<p>('<strong>We</strong>')AAAA-Careu de Asi SRL are committed to protecting and respecting your privacy.</p>
+								<p>This policy (together with our terms and conditions of use and any other documents referred to on it) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us. Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it.</p>
+								<p>The Site is operated by AAAA-Careu de Asi SRL ('AAAACareuDeASI'). AAAACareuDeASI is registered in Bucharest under number 24627679 in office Aleea Baiut Nr.3, zip 061953, sector 6 Bucharest, Romania.</p>
+								<p>AAAA-Careu de Asi SRL, our parent company, is the data controller for the purposes of Data Protection Act 1998, and we are a data processor.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>What information do we collect about you?</h2>
+								<p>We may collect and process the following information about you:</p>
+								<p>Information that you provide by filling in forms on our site (the 'Site') including your personal details, contact details, telephone numbers including mobile and cellular phone number and other profile information you submit when you create a membership profile). We may also collect information when you voluntarily complete customer surveys, provide feedback and participate in competitions.</p>
+								<p>Information from your web-based email accounts (including your profile picture and other publicly visible information) if you agree to add the Site's email address to the contact lists stored at your email provider's website.</p>
+								<p>Your location according to the IP address assigned to your PC by your Internet Service Provider.</p>
+								<p>If you contact us, we may keep a record of that correspondence.</p>
+								<p>Details of transactions you carry out through the Site, including any information we require to provide any products or services that you order from us through the Site.</p>
+								<p>Website usage information is also collected using cookies (see below under 'Cookies').</p>
+							</article>
+
+							<article class="text-holder">
+								<h2>How will we use the information about you?</h2>
+								<p>We use the information we hold about you in the following ways:</p>
+								<ul>
+									<li>To administer your user account with us including notifying you of any compatible matches, tips, announcements, updates, special offers or services, should you consent to this.</li>
+									<li>To help us improve the structure, layout and usability of the Site.</li>
+									<li>To allow you to participate in any interactive features of the Site including the features that require the mobile phone number.</li>
+									<li>To help personalise your repeat visits to the Site.</li>
+									<li>To notify you of any compatible matches or any matches who are near your location.</li>
+									<li>To provide you with information, offers, product supports, new products or services that you request from us or which we feel may interest you, where you have consented to be contacted for such purposes (see below under '<strong><em>Marketing</em></strong>' for more information). Such information may be sent to you by email or by SMS (if you provided your mobile phone number) or by us calling you on the phone number provided.</li>
+									<li>To answer any questions you may raise or respond to any comments you may send to us.</li>
+									<li>To notify you about changes to our service or the functionality of the Site.</li>
+									<li>To carry out market analysis and research.</li>
+									<li>To ensure that you are complying with the terms and conditions of use and to comply with our statutory and regulatory obligations.</li>
+								</ul>
+							</article>
+
+							<article class="text-holder">
+								<h2>What information do we collect about others?</h2>
+								<p>Some features of the Site allow you to share your Site experience with people you know (“your Contacts??), or to invite them to join the Site. When given the option to do so you can choose to upload your Contacts information; we will request their name and email address.</p>
+								<p>If you give us your password to upload these Contacts through a web based email provider we shall not store your password after you have uploaded your Contacts’ addresses.</p>
+							</article>
+							<article class="text-holder">
+								<h2>How do we use information about your Contacts?</h2>
+								<p>If you choose to upload your Contact’s name and email address you are allowing us to send an email invitation on your behalf, inviting your Contact to join the Site.</p>
+								<p>We will store your Contact’s name and email address solely for the purposes of inviting them to join our Site and for associating your Contact with you and other people they may know.</p>
+								<p>We will not store your Contacts information after invitations (up to a maximum of 3) have been sent. Your Contacts will then only receive future emails from us if they choose to accept the invitation and join our Site, or if you use any of our tools to share experiences with your Contacts and you input their email address for us to use again.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Disclosure of your information</h2>
+								<p>As we continue to develop our business, we might sell or buy assets. In such transactions, the information we have collected about you will generally be one of the transferred business assets. Also in the unlikely event that we or our assets are purchased, your information will also be one of the transferred assets. We may share information about you with:</p>
+								<ul>
+									<li>Other companies in the same corporate group as us.</li>
+									<li>A buyer or prospective buyer of our business.</li>
+									<li>Our professional advisers, such as our lawyers, where it is necessary for them to advise us.</li>
+									<li>Other persons if we are under a duty to disclose or share your information in order to comply with any legal obligation.</li>
+									<li>We may also share information about you with third parties that we engage to help us in certain areas, such as processing payments for services you order from us. However, we will control and be responsible for the use of your information by these third parties.</li>
+									<li>You authorise us to reproduce and broadcast the information contained in your profile including your name, photograph, "chat up line", description etc. throughout all or part of our Company and Group's services including our various internet sites and mobile sites.</li>
+									<li>We may also provide information about you to other users of the Site as reasonably required in order to provide the services that you order from us.</li>
+								</ul>
+							</article>
+							<article class="text-holder">
+								<h2>Marketing and other uses of your non-personal data by us and by third parties</h2>
+								<p>We may share non-personal information we collect under any of the above circumstances. We may share it with our own companies or other third parties to develop and deliver targeted advertising to you, or to help us prepare or share aggregate business and marketing reports.</p>
+								<p>We would like to send you information about goods and services offered by us and selected third parties that we think may be of interest to you. For that, the email address or mobile phone number you have provided can be used.</p>
+								<p>If you do not want us to use your data in this way, or to pass your details on to third parties for marketing purposes please tick the appropriate boxes situated in the '<strong><em>my account</em></strong>' area of the Site. You can also ask us to not to use your personal information, or to pass your details on to third parties for marketing purposes</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Cookies</h2>
+								<p>We may collect information about your computer, including where available your IP address, operating system and browser type, for system administration and to report aggregate information to our advertisers. This is statistical data about our users' browsing actions and patterns, and does not identify any individual. For the same reason, we may obtain information about your general internet usage by using a cookie file which is stored on the hard drive of your computer. Cookies contain information that is transferred to your computer's hard drive. They help us to improve the Site and to deliver a better and more personalised service. They enable us:</p>
+								<ul>
+									<li>To estimate our audience size and usage pattern.</li>
+									<li>To store information about your preferences, and so allow us to customise the Site according to your individual interests.</li>
+									<li>To speed up your searches.</li>
+									<li>To recognise you when you return to the Site.</li>
+								</ul>
+								<p>For further information about cookies visit: <a href="http://www.aboutcookies.org">http://www.aboutcookies.org</a></p>
+								<p>Cookies are small text files that are placed on your computer by websites that you visit. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site.  We use cookies to enhance our security, help us gather information during subscription and understand our web traffic trends. You can amend your browser settings so that you do not accept cookies, but this will probably adversely affect the way you experience our Site.</p>
+								<p>Non-personal data may be gathered on our behalf using cookies, log file data, and code that is embedded on our websites by specific third party partners. We use this non-personal information to help improve the services we provides to you. The non-personal data gathered is used to provide anonymised statistical information.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Where we store your personal data</h2>
+								<p>The personal data that we collect from you may be transferred to, and stored at, a location outside the European Economic Area ('<strong>EEA</strong>'). It may also be processed by staff located outside the EEA who work for us or for one of our suppliers (for example, staff who are involved in providing services that you order from us, processing your payment details or providing support services for the Site). By submitting your personal data to us through the Site, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy policy.</p>
+								<p>Where we have given you (or where you have chosen) a password or user ID code which enables you to access certain parts of the Site, you are responsible for keeping the password or user ID code confidential. We ask you not to share a password or user ID code with anyone.</p>
+								<p>Unfortunately, the transmission of information via the internet is not completely secure. Athough we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to the Site; any transmission is at your own risk. Once we have received your information, we will use procedures and security features to try to prevent unauthorised access.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Other Websites</h2>
+								<p>The Site may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies. Please check these policies before you submit any personal data to these websites.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Access to information and correction</h2>
+								<p>You have the right to request a copy of the information that we hold about you. Please note that we may make a small charge for this service.</p>
+								<p>We want to make sure that your personal information is accurate and up to date. You can ask us to correct or remove information you think is inaccurate at any time</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Changes to our privacy policy</h2>
+								<p>We keep our privacy policy under regular review and will post any changes to it on this page. We encourage you to regularly review our privacy policy to make sure you are always aware of what information we collect, how we use it and under what circumstances, if any, we may share it with other parties.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Protection of Personal Data</h2>
+								<p>In a sense of respect for the privacy of its members, the site agrees that the collection and processing of personal information carried within this site, are carried out in accordance with Law No. 78-17 of January 6, 1978 relating to data, files and freedoms, known as Law "Informatique et Liberte". The Site reserves the right to send targeted advertising pop ups to the Member. Accordance with Article 34 of the law "and Freedoms" guarantees Site Member right of opposition, access and rectify the data concerning him. All information collected by the Site (IP address each connection, email, etc ...) can be sent to legal authorities and / or police authorities in the case of a letter rogatory.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Litigation and Claims</h2>
+								<p>This contract is subject to European law. We will record all IP addresses. Any attempt at fraud will be systematically pursued. Before any litigation, the parties can choose an amicable settlement between them. Otherwise, the parties reserve the right to enter the Commercial Court jurisdiction.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Unsubscribe Policy</h2>
+								<p>We take the privacy of our subscribers very seriously, once unsubscribed from our services we will never send you email notifications again. All Unsubscribe requests are updated live.</p>
+								<p>To be removed from a mailing list, please unsubscribe via our subscription management page. We will promptly update your preferences for this email address.</p>
+								<p>You may indicate the specific lists from which you want to be removed, and which email address you want removed. Please note that if you are receiving emails to multiple email addresses, you must unsubscribe for each email address or domain separately.</p>
+								<p>If you unsubscribe via email, you will only be unsubscribed from the email you are writing in reference to – you will not be removed from all AAAA-Careu de Asi SRL mailing lists.</p>
+								<p>Please be aware that we may continue to contact you via email for administrative or informational purposes, including follow-up messages regarding business transactions between AAAA-Careu de Asi SRL and yourself. By law, such messages are not considered to be commercial e-mail.</p>
+								<p>AAAA-Careu de Asi SRL emails are sent in compliance with the CAN-SPAM Act of 2003. We take this law seriously and make every effort to comply with all subscriber requests.</p>
+								<p>If you have general questions, suggestions, or comments, please e-mail us at support@hookupbay.com</p>
+								<p>If you wish to manually unsubscribe, please log into your acocunt and select your unsubscribe options from the settings page. Or simply click the bottom "Unsubscribe" Link present in all our emails, and all email communication will stop, unless you decide to resubscribe.</p>
+								<p>We value your privacy. We will never give, lease, sell or otherwise disclose your personal information. Any information you give to AAAA-Careu de Asi SRL will be held with the utmost care, and will not be used in any way to which you have not consented. If you have any questions at all about our privacy policy, please email us.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Access to your personal information</h2>
+								<p>We collect, store and use the personal information that we receive in accordance with the Privacy Act 1993. In terms of this act you can request to see or change any personal information that we hold about you. To do this, please e-mail support@hookupbay.com specifying the information or changes that you require.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Browser information collected on the web site</h2>
+								<p>AAAA-Careu de Asi SRL analyses website visitor behaviour and activity logs to improve the value of the materials available on our web site. These logs are not personally identifiable and AAAA-Careu de Asi SRL makes no attempt to link them with the individuals that actually browse the site.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Privacy of our email lists</h2>
+								<p>Individuals must request to join our mailing lists using the email submit facility provided on this web site. By submitting your email address you consent for AAAA-Careu de Asi SRL to send you topic related emails from time to time. We do not sell, rent, loan, trade, or lease the addresses on our list to anyone. In addition, we configure our list server software to not divulge the email addresses of our list subscribers to anyone but authorised AAAA-Careu de Asi SRL staff and its affiliates.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>Our guaranteed unsubscribe policy</h2>
+								<p>We strive to only send email communications to those who want to receive it. If you would not like to receive future emails from us, please click the UNSUBSCRIBE link and you will be removed from our list immediately, guaranteed.</p>
+							</article>
+
+
+							<article class="text-holder">
+								<h2>This is where you give your permission:</h2>
+								<p>I understand that by submitting my email address to AAAA-Careu de Asi SRL I am giving them express permission to send me topic related emails from time to time, and understand that I can unsubscribe from their mailing list at any time.</p>
+								<p>You can contact us using the information below</p>
+								<p>AAAA-Careu de Asi SRL Aleea Baiut Nr.3, <br>Zip 061953, <br>Sector 6 Bucuresti, <br>Romania <br>&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#111;&#111;&#107;&#117;&#112;&#098;&#097;&#121;&#046;&#099;&#111;&#109; <br>+1507.774.0755</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="terms.html">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="terms.html">Terms</a></li>
+						<li><a href="privacy.html">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- File Upload modal -->
+	<div class="modal fade" id="fileUploadModal" tabindex="-1" role="dialog" aria-labelledby="fileUploadModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="fileUploadModalLabel">Upload your content</h2>
+					<form action="upload" class="dropzone needsclick dz-clickable">
+						<div class="dz-message needsclick">
+							Drop files here or click to upload.
+						</div>
+					</form>
+					<button class="btn btn-primary">Upload</button>
+					<span class="or">OR</span>
+					<div class="row">
+						<div class="col-sm-auto mb-2 mb-sm-0">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+						</div>
+						<div class="col-sm-auto">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Events modal -->
+	<div class="modal fade" id="streamEventModal" role="dialog" aria-labelledby="streamEventModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="streamEventModalLabel">Create an Event</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="date">Select the Date</label>
+								<input id="date" type="text" class="form-control datepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="sTime">Start Time</label>
+								<input id="sTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="eTime">End Time</label>
+								<input id="eTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label for="desc">Description</label>
+								<textarea id="desc" cols="30" rows="8" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Photos/Videos</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+								<span class="or">OR</span>
+								<div class="row">
+									<div class="col-sm-auto mb-2 mb-sm-0">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+									</div>
+									<div class="col-sm-auto">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#trailerModal">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Trailer modal -->
+	<div class="modal fade" id="trailerModal" role="dialog" aria-labelledby="trailerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="trailerModalLabel">Create a Video Trailer</h2>
+					<div class="row">
+						<div class="col-12 text-center">
+							<button class="btn btn-danger btn-record">Record Video</button>
+							<span class="or font-weight-bold">OR</span>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Video Trailer</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

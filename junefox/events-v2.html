@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="css/dropzone.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/dropzone.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		$(function () {
+			$(".datepicker").flatpickr({
+				altInput: true,
+				altFormat: "F j, Y",
+				dateFormat: "Y-m-d",
+			});
+			$(".timepicker").flatpickr({
+				enableTime: true,
+				noCalendar: true,
+				time_24hr: true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification active"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#profileSettingModal"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="content-block">
+				<div class="container">
+					<section class="events-section">
+						<h2 class="text-center"><span>My Streaming Events</span></h2>
+						<ul class="events-list">
+							<li>
+								<section class="event-box">
+									<!-- <a href="#" class="edit-event">Edit</a> -->
+									<div class="preview">
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb2.jpg" alt="image description"></span></span>
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb3.jpg" alt="image description"></span></span>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input type="checkbox" class="switch" id="switch1">
+													<label for="switch1">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<time datetime="2018-06-20T18:00" class="event-date">June 20, 2018 <span class="time">18:00</span></time>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam harum sit odit perspiciatis suscipit? Maxime voluptatibus exercitati</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+							<li>
+								<section class="event-box">
+									<div class="preview">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/MpZvoWK3I40?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input checked type="checkbox" class="switch" id="switch2">
+													<label for="switch2">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<span class="event-date">Starting in <span class="time">2hrs</span></span>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vero</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+							<li>
+								<section class="event-box">
+									<div class="preview">
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb2.jpg" alt="image description"></span></span>
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb3.jpg" alt="image description"></span></span>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input type="checkbox" class="switch" id="switch3">
+													<label for="switch3">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<time datetime="2018-06-20T18:00" class="event-date">June 20, 2018 <span class="time">18:00</span></time>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vero</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+							<li>
+								<section class="event-box">
+									<!-- <a href="#" class="edit-event">Edit</a> -->
+									<div class="preview">
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb2.jpg" alt="image description"></span></span>
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb3.jpg" alt="image description"></span></span>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input type="checkbox" class="switch" id="switch4">
+													<label for="switch4">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<time datetime="2018-06-20T18:00" class="event-date">June 20, 2018 <span class="time">18:00</span></time>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vero</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+							<li>
+								<section class="event-box">
+									<div class="preview">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/MpZvoWK3I40?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input checked type="checkbox" class="switch" id="switch5">
+													<label for="switch5">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<span class="event-date">Starting in <span class="time">2hrs</span></span>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vero</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+							<li>
+								<section class="event-box">
+									<div class="preview">
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb2.jpg" alt="image description"></span></span>
+										<span class="image-holder"><span class="bg-stretch"><img src="images/thumb3.jpg" alt="image description"></span></span>
+									</div>
+									<div class="description">
+										<div class="row">
+											<div class="col-8">
+												<h3><a href="#">Event Title</a></h3>
+											</div>
+											<div class="col-4 text-right">
+												<span class="switch">
+													<input type="checkbox" class="switch" id="switch6">
+													<label for="switch6">Automatic Gain Control</label>
+												</span>
+											</div>
+										</div>
+										<time datetime="2018-06-20T18:00" class="event-date">June 20, 2018 <span class="time">18:00</span></time>
+										<p>I am Tylor. I love talking to new people. Feel free to chat with me. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid vero</p>
+										<div class="form-group">
+											<input type="text" class="form-control" value="junefox.com/ashleytaylor/hellosummer20">
+											<button class="btn-copy"><i class="icon-content_copy"></i></button>
+										</div>
+										<div class="row">
+											<div class="col-sm-7">
+												<button class="btn btn-warning">Stream @ $4.99</button>
+											</div>
+											<div class="col-sm-5 text-right">
+												<a href="edit-event.html" class="btn btn-primary">Edit</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer dark">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- File Upload modal -->
+	<div class="modal fade" id="fileUploadModal" tabindex="-1" role="dialog" aria-labelledby="fileUploadModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="fileUploadModalLabel">Upload your content</h2>
+					<form action="upload" class="dropzone needsclick dz-clickable">
+						<div class="dz-message needsclick">
+							Drop files here or click to upload.
+						</div>
+					</form>
+					<button class="btn btn-primary">Upload</button>
+					<span class="or">OR</span>
+					<div class="row">
+						<div class="col-sm-auto mb-2 mb-sm-0">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+						</div>
+						<div class="col-sm-auto">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Events modal -->
+	<div class="modal fade" id="streamEventModal" role="dialog" aria-labelledby="streamEventModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="streamEventModalLabel">Create an Event</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="date">Select the Date</label>
+								<input id="date" type="text" class="form-control datepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="sTime">Start Time</label>
+								<input id="sTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="eTime">End Time</label>
+								<input id="eTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label for="title">Title</label>
+								<input id="title" type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label for="desc">Description</label>
+								<textarea id="desc" cols="30" rows="8" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Photos/Videos</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+								<span class="or">OR</span>
+								<div class="row">
+									<div class="col-sm-auto mb-2 mb-sm-0">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+									</div>
+									<div class="col-sm-auto">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#trailerModal">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Trailer modal -->
+	<div class="modal fade" id="trailerModal" role="dialog" aria-labelledby="trailerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="trailerModalLabel">Create a Video Trailer</h2>
+					<div class="row">
+						<div class="col-12 text-center">
+							<button class="btn btn-danger btn-record">Record Video</button>
+							<span class="or font-weight-bold">OR</span>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Video Trailer</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

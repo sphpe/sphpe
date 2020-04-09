@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="css/dropzone.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/dropzone.min.js"></script>
+	<!-- <script src="js/moment.js"></script> -->
+	<!-- <script src="js/bootstrap-datepicker.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+		$(function () {
+			$(".datepicker").flatpickr({
+				altInput: true,
+				altFormat: "F j, Y",
+				dateFormat: "Y-m-d",
+			});
+			$(".timepicker").flatpickr({
+				enableTime: true,
+				noCalendar: true,
+				time_24hr: true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<!-- <div class="menu-overlay"></div> -->
+		<header id="header">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<a href="#" class="menu-opener sidebar-opener"><span>Menu</span></a>
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a class="drop-opener" href="#"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+				<div class="profile-drop">
+					<ul>
+						<li><a href="#"><i class="icon icon-user"></i>My Profile</a></li>
+						<li><a href="#"><i class="icon icon-people"></i>Fans</a></li>
+						<li><a href="#"><i class="icon icon-globe"></i>Following</a></li>
+						<li><a href="#"><i class="icon icon-headset"></i>My Referrals</a></li>
+						<li><a href="#"><i class="icon icon-preferences"></i>My Settings</a></li>
+						<li><a href="#"><i class="icon icon-exit"></i>Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<nav class="sidebar-nav">
+			<div class="top-sidebar">
+				<a href="#" class="menu-opener sidebar-opener"><span>Menu</span></a>
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+			</div>
+			<ul>
+				<li class="active"><a href="#">Profile</a></li>
+				<li><a href="#">Model</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#" class="sidebar-opener" data-toggle="modal" data-target="#profileSettingModal">Setting</a></li>
+			</ul>
+		</nav>
+		<main id="main">
+			<div class="content-block">
+				<div class="container">
+					<div class="bio-block">
+						<div class="d-flex align-items-center bio-holder">
+							<div class="profile-picture">
+								<a href="#"><img class="img-fluid" src="images/profile-picture.jpg" alt="image description"></a>
+							</div>
+							<div class="follow-holder">
+								<a href="live-chat.html" class="chat-link d-none d-lg-block"><img src="images/icon-chat.svg" alt="image description" width="48"></a>
+								<div class="bio-header d-none d-lg-flex align-items-lg-center">
+									<h2>tayloralesia <span class="verified"><i class="icon-star"></i></span></h2>
+									<a href="#" class="btn btn-secondary">Following</a>
+									<span class="price">$ 9.97</span>
+								</div>
+								<ul class="follow-info">
+									<li>
+										<span class="number">259</span>
+										<span class="text">posts</span>
+									</li>
+									<li>
+										<span class="number">2.1m</span>
+										<span class="text">followers</span>
+									</li>
+									<li>
+										<span class="number">40</span>
+										<span class="text">following</span>
+									</li>
+								</ul>
+								<div class="action-field d-lg-none">
+									<a href="#" class="btn btn-secondary">Following</a>
+									<a href="live-chat.html" class="btn btn-primary btn-submit"><i class="icon-thunder"></i></a>
+								</div>
+								<p class="d-none d-lg-block"><span class="name">Taylor Alesia</span> trying to uncover the secret chik fil a sauce formula so i can rule the world</p>
+								<ul class="button-list d-none d-lg-flex">
+									<li><a href="timeline.html" class="btn btn-secondary">line</a></li>
+									<li><a href="photos.html" class="btn btn-secondary">photo</a></li>
+									<li><a href="videos.html" class="btn btn-secondary">video</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="stream-button">
+							<button class="btn btn-primary" data-toggle="modal" data-target="#loginModal"><i class="icon-add"></i>Join Streaming Event</button>
+						</div>
+						<div class="bio-header d-lg-none">
+							<h2>Taylor Alesia <span class="verified"><i class="icon-star"></i></span></h2>
+							<p>trying to uncover the secret chik fil a sauce formula so i can rule the world</p>
+						</div>
+					</div>
+					<div class="gallery-block">
+						<nav class="gallery-menu d-lg-none">
+							<ul>
+								<li><a href="timeline.html">timeline<!-- <i class="icon-add"></i> --></a></li>
+								<li><a href="photos.html">photo</a></li>
+								<li><a href="videos.html">video</a></li>
+								<!-- <li><a href="#">go live <span class="online"></span></a></li> -->
+							</ul>
+						</nav>
+						<ul class="gallery-list add">
+							<li><a href="images/img4.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb4.jpg" alt="image description"></a></li>
+							<li><a href="images/img5.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb5.jpg" alt="image description"></a></li>
+							<li><a href="images/img1.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb1.jpg" alt="image description"></a></li>
+							<li><a href="images/img3.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb3.jpg" alt="image description"></a></li>
+							<li><a href="images/img6.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb6.jpg" alt="image description"></a></li>
+						</ul>
+						<section class="video-section">
+							<h2 class="text-center"><span>Videos</span></h2>
+							<div class="video">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/maSWcrEQmPA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
+						</section>
+						<div class="personal-details">
+							<div class="detail-section">
+								<div class="info-title">Event Title</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="10" class="form-control" placeholder="Add the event title"></textarea>
+										<i class="icon-angle-right"></i>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<div class="info-title">Price</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="10" class="form-control" placeholder="Set price">$4.99</textarea>
+										<i class="icon-angle-right"></i>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<strong class="info-title">Notification options</strong>
+								<div class="info-content d-flex align-items-center justify-content-between">
+									<span class="d-flex align-items-center setting-option">Newsletter to followers</span>
+									<div class="setting-value">
+										<span class="switch">
+											<input checked="checked" type="checkbox" class="switch" id="newsletter">
+											<label for="newsletter">Newsletter to followers</label>
+										</span>
+									</div>
+								</div>
+								<div class="info-content d-flex align-items-center justify-content-between">
+									<span class="d-flex align-items-center setting-option">Reminders to myself</span>
+									<div class="setting-value">
+										<span class="switch">
+											<input checked="checked" type="checkbox" class="switch" id="reminder">
+											<label for="reminder">Reminders to myself</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<div class="info-title">about me</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="2" class="form-control about" placeholder="Write something about you..."></textarea>
+										<span class="counter">500</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer dark">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- File Upload modal -->
+	<div class="modal fade" id="fileUploadModal" tabindex="-1" role="dialog" aria-labelledby="fileUploadModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="fileUploadModalLabel">Upload your content</h2>
+					<form action="upload" class="dropzone needsclick dz-clickable">
+						<div class="dz-message needsclick">
+							Drop files here or click to upload.
+						</div>
+					</form>
+					<button class="btn btn-primary">Upload</button>
+					<span class="or">OR</span>
+					<div class="row">
+						<div class="col-sm-auto mb-2 mb-sm-0">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+						</div>
+						<div class="col-sm-auto">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Events modal -->
+	<div class="modal fade" id="streamEventModal" role="dialog" aria-labelledby="streamEventModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="streamEventModalLabel">Create an Event</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="date">Select the Date</label>
+								<input id="date" type="text" class="form-control datepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="sTime">Start Time</label>
+								<input id="sTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="eTime">End Time</label>
+								<input id="eTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label for="desc">Description</label>
+								<textarea id="desc" cols="30" rows="8" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Photos/Videos</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+								<span class="or">OR</span>
+								<div class="row">
+									<div class="col-sm-auto mb-2 mb-sm-0">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+									</div>
+									<div class="col-sm-auto">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#trailerModal">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Trailer modal -->
+	<div class="modal fade" id="trailerModal" role="dialog" aria-labelledby="trailerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="trailerModalLabel">Create a Video Trailer</h2>
+					<div class="row">
+						<div class="col-12 text-center">
+							<button class="btn btn-danger btn-record">Record Video</button>
+							<span class="or font-weight-bold">OR</span>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Video Trailer</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Login/Signup modal -->
+	<div class="modal fade" id="loginModal" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content login-lightbox event border-0">
+				<div class="file-uploader p-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="login-box mb-0">
+						<div class="right-column column">
+							<div class="sign-info">
+								<div class="user-counter mt-auto">395,804,680</div>
+								<span class="text">people have already joined, jump in!</span>
+								<a href="#" class="btn btn-lg btn-secondary"><i class="icon-facebook2"></i>Sign in via Facebook</a>
+								<span class="assurance">We never post on your behalf.</span>
+								<div class="other-option mt-auto">
+									<span class="title">Other sign in options</span>
+									<span class="login-email"><a href="#">Login with E-mail</a></span>
+								</div>
+							</div>
+							<form action="#" class="login-form">
+								<h2>Login with email</h2>
+								<div class="form-group">
+									<input type="email" class="form-control form-control-lg" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control form-control-lg" placeholder="Password">
+								</div>
+								<button href="#" class="btn btn-lg btn-secondary justify-content-center">Login</button>
+								<span class="alternate">Not a member? <a href="#">Register with Email</a></span>
+								<span class="note">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed aliquam beatae libero, cum labore voluptates, maxime magni a consequuntur facere aliquid. Libero expedita magnam nihil deserunt <a href="#">privacy</a> culpa magni deleniti possimus.</span>
+							</form>
+							<form action="#" class="signup-form">
+								<h2>Signup with email</h2>
+								<div class="form-group">
+									<input type="text" class="form-control form-control-lg" placeholder="Name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control form-control-lg" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control form-control-lg" placeholder="Password">
+								</div>
+								<button href="#" class="btn btn-lg btn-secondary justify-content-center">Login</button>
+								<span class="alternate">Already a member? <a href="#">Login with Email</a></span>
+							</form>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

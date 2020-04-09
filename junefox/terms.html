@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="css/dropzone.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/dropzone.min.js"></script>
+	<!-- <script src="js/moment.js"></script> -->
+	<!-- <script src="js/bootstrap-datepicker.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+		$(function () {
+			$(".datepicker").flatpickr({
+				altInput: true,
+				altFormat: "F j, Y",
+				dateFormat: "Y-m-d",
+			});
+			$(".timepicker").flatpickr({
+				enableTime: true,
+				noCalendar: true,
+				time_24hr: true
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification active"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#profileSettingModal"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="content-block">
+				<div class="container">
+					<div class="content-text">
+						<div class="jumbotron border py-4">
+							<article class="text-holder">
+								<h2>Terms of use</h2>
+								<p>This page (together with the documents referred to on it including our privacy policy) tells you the terms of use on which you may make use of this website (the 'Site'). Please read these terms of use carefully before you start to use the Site.</p>
+								<p>By using the Site, you indicate that you accept these terms of use and our privacy policy and that you agree to abide by them. If you do not agree to these terms of use and our privacy policy, please do not use the Site.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Information about us</h2>
+								<p>The Site is operated by AAAA-Careu de Asi SRL ('AAAACareuDeASI'). AAAACareuDeASI is registered in Romania, Bucharest and office AAAA-Careu de Asi SRL, Aleea Baiut Nr.3, zip 061953, sector 6.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Services</h2>
+								<p>AAAACareuDeASI provides on line services and associated services through the Site that enables you to contact and engage in conversation with other members and to participate in online events hosted on the Site (the 'Services').</p>
+								<p>AAAACareuDeASI creates user profiles for use by our customer support representatives for the support, marketing and improvement of the Services. AAAACareuDeASI 's customer support representatives are encouraged to speak to members and also stimulate conversation between members by making introductions and recommendations. They may, from time to time, send electronic communications to ask how their members are using certain aspects of the Services. This is a vital part of the Services AAAACareuDeASI provide. Should you wish not to be contacted in this way, you can alter your preferences by visiting the "My Account" section of the website.</p>
+								<p>AAAACareuDeASI may offer additional services or revise the scope of the Services at its discretion and with or without notice, and these terms of use will apply to all additional or revised Services. AAAACareuDeASI also reserves the right to stop offering the Services.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Your access</h2>
+								<p>You can access the Site in the following ways:</p>
+								<ul>
+									<li>By visiting the Site as a guest;</li>
+									<li>By registering through the Site as a member; or</li>
+									<li>By registering through the Site as a member and purchasing a subscription package.</li>
+								</ul>
+							</article>
+							<article class="text-holder">
+								<h2>Fees / Charges / Subscription Packages</h2>
+								<p>There is no fee payable to access the Site as a guest or as a registered member. However, please note that accessing the Site as a guest or registered member will only give you limited access to features and areas of the Site.</p>
+								<p>If you would like full access to all features and areas of the Site and access to all the Services then you should purchase one of AAAACareuDeASI 's subscription packages which can vary in length from 3 day trials, to 1, 3 or 6 month packages.</p>
+								<p>The fees payable for each of AAAACareuDeASI's subscription packages are set out on the payment page of the Site.</p>
+								<p>AAAACareuDeASI reserves the rights to alter these subscriptions packages at any time.</p>
+								<p>Please be aware that when you subscribe to any package, including the trial period, you will become liable for automatic renewal billing.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Repeat billing policy</h2>
+								<p>We operate a repeat billing policy. This means that once your initial membership period has expired, for your convenience, your membership will automatically be renewed at the same rate that you signed up for.</p>
+								<p>That means even if our prices rise, your renewal costs are fixed at your signup price. Rebilling will occur only when your current payment period expires and not before.</p>
+								<p>If you do not want to continue to use the site you can cancel the automatic billing any time before the payment collection date, allowing at least 3 days for any administrative processing to occur.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Use of the Site Personal use</h2>
+								<p>Your account is for your personal use only. You may not authorise others to use your account or attempt to use another member's account without first obtaining their consent. You must not assign or otherwise transfer your account to any other person or entity.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Information you submit</h2>
+								<p>If you register with the Site, you warrant that you will:</p>
+								<p>Provide all the information required to complete the registration forms on the Site;</p>
+								<p>Ensure the information you provide is accurate and up to date;</p>
+								<p>Update and maintain the accuracy of the information you provide;</p>
+								<p>Only post information and content that is relevant to the members of the Site (please see below under '<strong><em>Restrictions on your use of the Site</em></strong>' for further details of the restrictions on the type of information and content you can post);</p>
+								<p>Be fully responsible for all use of your account and for any actions that take place using your account; and</p>
+								<p>Only post genuine ratings of and comments on other members' profiles and other content based on your personal experience. Please note that any comments you make, if false, could be defamatory and could lead to legal proceedings being taken against you.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Restrictions on your use of the Site</h2>
+								<p>You agree that you will not post any content on the Site, transmit any content to others, communicate any content, provide links to any content, or otherwise engage in any activity on the Site or through the Services that:</p>
+								<ul>
+									<li>Impersonates or otherwise misrepresents affiliation, connection or association with, any person or entity;</li>
+									<li>Discloses any personal or confidential information of any person or organisation without first obtaining their consent or solicits another person's personal information for commercial or unlawful purposes;</li>
+									<li>Solicits or requests personal information from anyone or solicit passwords for unlawful purposes;</li>
+									<li>Contains any material which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan horses, worms, harmful components, corrupted data or other malicious software or harmful data);</li>
+									<li>Promotes racism, bigotry, hatred or physical harm against any group or individual;</li>
+									<li>Promotes or enables illegal or unlawful activities;</li>
+									<li>Is intended to harass, annoy, threaten or intimidate any other members or other people or organisations;</li>
+									<li>Is defamatory, inaccurate, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, inflammatory, blasphemous, in breach of confidence, in breach of privacy or which may cause annoyance or inconvenience;</li>
+									<li>Is deliberately misleading or fraudulent;</li>
+									<li>Contains others' copyrighted content (such as music, videos, photographs, images etc) without first obtaining their consent;</li>
+									<li>Uses the Site or Services for chain letters, junk mail or spam e-mails;</li>
+									<li>Advertises or solicits any member to buy or sell any products or services;</li>
+									<li>Interferes or disrupts networks connected to the Site or attempts to interfere with the proper functioning of the Site (including imposing an unreasonable load on the technical infrastructure used to operate the Site); or</li>
+									<li>Contains any material which may infringe or violate any third party's rights.</li>
+								</ul>
+							</article>
+							<article class="text-holder">
+								<h2>Your responsibility</h2>
+								<p>You are solely responsible for, and assume all liability regarding, (i) the information and content you post on the Site; (ii) the information and content you post, transmit, publish, or otherwise make available through the Site; and (iii) your interactions with other members through the Site.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Removal of content</h2>
+								<p>AAAACareuDeASI reserves the right, but has no obligation, to monitor the information or content you submit to the Site or post in the public areas of the Site. AAAACareuDeASI has the right to remove any such information or content: (i) that in AAAACareuDeASI 's sole opinion violates, or may violate, any applicable law, or these terms of use; (ii) or upon the request of any third party.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Security</h2>
+								<p>You agree that you are responsible for keeping your screen name and password for your account secret. You acknowledge that AAAACareuDeASI is not responsible for third party access to your account that results from sharing by you or the theft or misappropriation of your screen name and password. AAAACareuDeASI reserves the right to suspend your access to the Site or terminate your account if AAAACareuDeASI suspects an unauthorised person is attempting to access it.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Reporting</h2>
+								<p>You agree to tell AAAACareuDeASI immediately about: (i) any violation of these terms of use by others (including but not limited to other members) of which you become aware; and (ii) any known or suspected unauthorised access to your account.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Risks of using the Site &amp; Services</h2>
+								<p>You assume all risk when using the Site and the Services, including but not limited to, all of the risks associated with any online or offline interactions with others, including dating. You understand that AAAACareuDeASI is unable to guarantee the accuracy or completeness of information provided to you by or about other members, and that AAAACareuDeASI is unable to confirm that any member is who he or she claims to be.</p>
+								<p>AAAACareuDeASI does not warrant and is not responsible for ensuring that other members are in compliance with these terms of use. You agree to take all necessary precautions when communicating with or meeting individuals through the Site.</p>
+								<p>You understand that AAAACareuDeASI makes no guarantees or warranties, either express or implied, regarding your ultimate compatibility with individuals you meet through the Site or as to the conduct of such individuals. You further understand that AAAACareuDeASI makes no guarantees or warranties as to the number or frequency of matches made available to you through the Site.</p>
+								<p>AAAACareuDeASI recommends that all members exercise caution when meeting new people online and review our safety guide for some helpful safety tips.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Members outside the EEA</h2>
+								<p>By registering and creating a member profile you consent to the wider dissemination of the information you provide in that profile to the other users of the Site, some of whom may be outside the European Economic Area ('EEA'), to allow you to date in an online environment. AAAACareuDeASI will keep your personal information confidential except: (i) where you have posted it for publication or display; or (ii) to the extent that AAAACareuDeASI is compelled to disclose it by law or to comply with an instruction of a regulatory body of competent jurisdiction.</p>
+							</article>
+							<article class="text-holder">
+								<h2>AAAACareuDeASI 's proprietary rights</h2>
+								<p>You acknowledge and agree that the copyright and other intellectual property rights in the Site and the content provided as part of the Services belongs to AAAACareuDeASI . No rights in respect of the Site or the content provided as part of the Services are granted to you other than those expressly set out in these terms of use.</p>
+								<p>This site may use trademarks owned by third parties including AAAA-Careu de Asi SRL, under an exclusive licence. Any infringement of such trademarks shall be reported by AAAACareuDeASI to the relevant trademark holder without delay.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Licence to your posted content</h2>
+								<p>By posting information or content to your profile pages or any public area of the Site, you automatically grant, and you represent and warrant that you have the right to grant to AAAACareuDeASI an irrevocable, perpetual, non-exclusive, royalty free, worldwide licence to use, copy, publish, display, reformat, translate and distribute such information or content and to grant and authorise sub-licences of the same. You further waive any moral rights you may have in any such information or content.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Disclaimer of warranties</h2>
+								<p>This section will apply to the maximum extent permitted by applicable law.</p>
+								<p>AAAACareuDeASI will provide the Services with reasonable skill and care, and except as expressly provided in these terms of use, does not make or grant (and hereby excludes) any warranties, representations, conditions or terms of any kind, whether express, implied, statutory or otherwise with respect to the Services or the Site (including all information contained therein), including but not limited to any implied warranties of merchantability, satisfactory quality, fitness for a particular purpose or non-infringement.</p>
+								<p>AAAACareuDeASI does not warrant that your use of the Site will be secure, uninterrupted, always available, error-free or will meet your requirements, or that any defects in the Site will be corrected. AAAACareuDeASI disclaims liability for, and no warranty, representation, condition or other term is made with respect to, the connectivity and availability of the Site.</p>
+								<p>Opinions, advice, statements, offers, or other information or content made available through the Services, but not directly by AAAACareuDeASI , are those of their respective authors, and should not necessarily be relied upon. Such authors are solely responsible for such content. AAAACareuDeASI does not: (i) warrant or guarantee the accuracy, completeness or usefulness of any information provided on the Site or the Services, or (ii) adopt, endorse or accept responsibility for the accuracy or reliability of any opinion, advice, or statement made by any party other than AAAACareuDeASI . Under no circumstances will AAAACareuDeASI be responsible for any loss or damage resulting from anyone's reliance on information or other content posted on the Site, provided through the Services, or transmitted to or by any members.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Liability</h2>
+								<p>To the maximum extent permitted by law, in no event will AAAACareuDeASI be liable for any direct, indirect or consequential loss or damage arising out of or relating, directly or indirectly, to the use or inability to use the Site or Services, including, without limitation, loss of income or revenue, loss of corruption of data or programs, loss of goodwill and loss of anticipated savings, even if AAAACareuDeASI knows or has been advised of the possibility of such loss arising.</p>
+								<p>To the maximum extent permitted by applicable law, in no event will AAAACareuDeASI be liable for any claims, losses or damages whatsoever, whether direct, indirect, general, special, compensatory, consequential, and/or incidental, arising out of or relating to the conduct of you or anyone else in connection with the use of the Site or Services, including without limitation, bodily injury, emotional distress, and/or any other claims, losses or damages resulting from communications or meetings with other users of the Site. This includes any claims, losses or damages arising from the conduct of members who have registered under false pretenses or who attempt to defraud or harm you.</p>
+								<p>AAAACareuDeASI 's total liability to you in connection with these terms of use or the use of the Services or the Site shall be limited as to either: (i) the fees paid by you to AAAACareuDeASI for use of the Services; or (ii) £100 if you have not paid AAAACareuDeASI for the use of any Services.</p>
+								<p>Nothing in these terms of use will limit or exclude AAAACareuDeASI 's liability for: (i) death or personal injury arising from AAAACareuDeASI 's negligence; or (ii) fraud or fraudulent misrepresentations made by AAAACareuDeASI .</p>
+							</article>
+							<article class="text-holder">
+								<h2>Indemnity</h2>
+								<p>You agree to indemnify AAAACareuDeASI , its officers, directors, employees, agents and third parties for any claims, causes of action, debts, losses, costs, liabilities and expenses (including reasonable legal fees) relating to or arising, directly or indirectly, out of: (i) your use of or inability to use the Site or Services, (ii) any content or information posted by you, (iii) your violation of these terms of use or your violation of any rights of a third party, or (iv) your violation of any applicable laws, rules or regulations.</p>
+								<p>AAAACareuDeASI reserves the right, at its own cost, to assume the exclusive defence and control of any matter otherwise subject to indemnification by you. You agree to provide AAAACareuDeASI with full co-operation if AAAACareuDeASI chooses to exercise this right.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Information about you and your visits to the Site</h2>
+								<p>AAAACareuDeASI processes information about you in accordance with AAAACareuDeASI 's privacy policy. By using the Site, you consent to such processing and you warrant that all data provided by you is accurate.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Links to other sites</h2>
+								<p>Where the Site contains links to other sites and resources provided by third parties, these links are provided for your information only. AAAACareuDeASI has no control over the contents of those sites or resources, and accepts no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Term and termination</h2>
+								<p>These terms of use will become effective from the point at which you use the Site or the Services (or where you expressly accept these terms of use by registering with AAAACareuDeASI ) and will remain in full force and effect unless terminated hereunder.</p>
+								<p>Your subscription will be automatically extended for successive renewal period of the same duration as the subscription term originally selected, at the then current non-promotional subscription rate. Please note that you must terminate your subscription prior to the end of the subscription period for which you have paid to avoid being charged for the next subscription period. To change or terminate your subscription at any time, please follow the subscription cancellation procedure described in the Help section.</p>
+								<p>Either AAAACareuDeASI or you may terminate your user account at any time and for any reason by sending notice to the other. AAAACareuDeASI reserves the right to suspend immediately or terminate your access to any of the Services, without notice, for any reason. AAAACareuDeASI also reserves the right to remove your account information or data from the Site and any other records at any time at AAAACareuDeASI 's sole discretion. If your access to any of the Services is suspended due to the breach of these terms of use, you agree that all fees paid to AAAACareuDeASI are final and all outstanding or pending payments will immediately be due. Following any termination of your use of the Services, AAAACareuDeASI reserves the right to send a notice explaining such termination to other members you have contacted through the Site.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Your rights of cancellation Cancellation at any time</h2>
+								<p>You may cancel your registration or subscription to any Services at any time during the term of such registration or subscription by accessing the 'My Account' section of the Site and clicking on the appropriate link.</p>
+								<p>Alternatively, you may cancel your registration or subscription at any time by sending a notice of cancellation to:</p>
+								<p>When emailing us you must include your profile information (screenname and email address) in order that we can verify that you are in fact the account holder authorised to amend the account.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Address:</h2>
+								<p>AAAA-Careu de Asi SRL Aleea Baiut Nr.3, <br>Zip 061953, <br>Sector 6 Bucuresti, <br>Romania <br>&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#111;&#111;&#107;&#117;&#112;&#098;&#097;&#121;&#046;&#099;&#111;&#109; <br>+1507.774.0755</p>
+							</article>
+							<article class="text-holder">
+								<h2>7-Day cancellation right</h2>
+								<p>Regulations 2000, you can cancel the agreement created through your acceptance of these terms of use within 7 working days after the confirmation of your subscription to any Services and receive a full refund. However, if you use the Services in any manner after your subscription, you will lose your cancellation right. Use of the Services means sending to or receiving from other members and any communication, viewing photos of other members, or making changes to your profile or information on your account.</p>
+								<p>In the event that any refund is given, this should be refunded within three (3) business days, depending on payment method and other factors which may affect refund time.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Entire agreement</h2>
+								<p>These terms of use, and the pages on the Site to which these terms refer, constitute a contract that governs the relationship between you and AAAACareuDeASI . They cancel and replace any conditions that may have been agreed to in the past, even if not directly withdrawn or amended, and constitute the entirety of the rights and obligations in place between you and AAAACareuDeASI .</p>
+							</article>
+							<article class="text-holder">
+								<h2>Changes to these terms of use</h2>
+								<p>AAAACareuDeASI may revise these terms of use at any time by amending this page. You are expected to check this page from time to time to take notice of any changes AAAACareuDeASI makes, as they are binding on you. Some of the provisions contained in these terms of use may also be superseded by provisions or notices published elsewhere on the Site.</p>
+							</article>
+							<article class="text-holder">
+								<h2>Jurisdiction and applicable law</h2>
+								<p>These terms of use and the documents referred to in them shall be governed and construed in accordance with Europe law. Any disputes relating to these terms of use, the documents referred to in them or the Site or the Services will be subject to the exclusive jurisdiction of the European courts.</p>
+							</article>
+							<article class="text-holder">
+								<h2>AAAACareuDeASI 's customer complaints policy <br>Address:</h2>
+								<p>AAAA-Careu de Asi SRL Aleea Baiut Nr.3, <br>Zip 061953, <br>Sector 6 Bucuresti, <br>Romania <br>&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#111;&#111;&#107;&#117;&#112;&#098;&#097;&#121;&#046;&#099;&#111;&#109; <br>+1507.774.0755</p>
+								<p>In the event that you disagree with any charge made to your account, you agree to contact AAAACareuDeASI with a view to resolving the dispute prior to making a formal notification to your credit card company. You must contact AAAACareuDeASI either by email or telephone, stating your reasons for dispute of the charge. This will enable AAAACareuDeASI to accurately assess your complaint and, where justified, credit your card with the disputed amount.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="terms.html">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="terms.html">Terms</a></li>
+						<li><a href="privacy.html">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- File Upload modal -->
+	<div class="modal fade" id="fileUploadModal" tabindex="-1" role="dialog" aria-labelledby="fileUploadModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="fileUploadModalLabel">Upload your content</h2>
+					<form action="upload" class="dropzone needsclick dz-clickable">
+						<div class="dz-message needsclick">
+							Drop files here or click to upload.
+						</div>
+					</form>
+					<button class="btn btn-primary">Upload</button>
+					<span class="or">OR</span>
+					<div class="row">
+						<div class="col-sm-auto mb-2 mb-sm-0">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+						</div>
+						<div class="col-sm-auto">
+							<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Events modal -->
+	<div class="modal fade" id="streamEventModal" role="dialog" aria-labelledby="streamEventModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="streamEventModalLabel">Create an Event</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label for="date">Select the Date</label>
+								<input id="date" type="text" class="form-control datepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="sTime">Start Time</label>
+								<input id="sTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-6 col-sm-3">
+							<div class="form-group">
+								<label for="eTime">End Time</label>
+								<input id="eTime" type="text" class="form-control timepicker">
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<label for="desc">Description</label>
+								<textarea id="desc" cols="30" rows="8" class="form-control"></textarea>
+							</div>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Photos/Videos</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+								<span class="or">OR</span>
+								<div class="row">
+									<div class="col-sm-auto mb-2 mb-sm-0">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/facebook.svg" height="18" alt="Facebook"></span></a></span>
+									</div>
+									<div class="col-sm-auto">
+										<span class="link-import"><a href="#"><span class="text">Import from</span><span class="social-logo"><img src="images/instagram-text.svg" height="25" alt="Instagram"></span></a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#trailerModal">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Trailer modal -->
+	<div class="modal fade" id="trailerModal" role="dialog" aria-labelledby="trailerModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h2 class="modal-title" id="trailerModalLabel">Create a Video Trailer</h2>
+					<div class="row">
+						<div class="col-12 text-center">
+							<button class="btn btn-danger btn-record">Record Video</button>
+							<span class="or font-weight-bold">OR</span>
+						</div>
+						<div class="col-12 p-0">
+							<div class="file-uploader">
+								<h2>Upload Video Trailer</h2>
+								<form action="upload" class="dropzone needsclick dz-clickable">
+									<div class="dz-message needsclick">
+										Drop files here or click to upload.
+									</div>
+								</form>
+								<button class="btn btn-secondary">Upload</button>
+							</div>
+						</div>
+					</div>
+					<div class="text-right">
+						<button class="btn btn-primary">Create</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

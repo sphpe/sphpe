@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('.scrollbar-macosx').scrollbar();
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification active"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#profileSettingModal"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="banner container full-width">
+				<div class="chat-block w-100">
+					<div class="chat-bg"></div>
+					<div class="chat-header">
+						<div class="d-flex justify-content-between align-items-end">
+							<ul class="tab-list nav" id="myTab" role="tablist">
+								<li><a class="active" id="chatRoom-tab" data-toggle="tab" href="#chatRoom" role="tab" aria-controls="chatRoom" aria-selected="true">Chat Room</a></li>
+								<li><a class="nav-link" id="privateChat-tab" data-toggle="tab" href="#privateChat" role="tab" aria-controls="privateChat" aria-selected="false">Private Chat</a></li>
+							</ul>
+							<button class="btn-contact contact-opener d-md-none">Contacts</button>
+						</div>
+					</div>
+					<div class="contact-list scrollbar-macosx">
+						<ul>
+							<li class="unread">
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img15.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="counter">4</span>
+										<span class="name">Brittany Jordan</span>
+										<span class="last-msg"><span class="msg">Brittany sent a photo.</span><time datetime="19:29" class="sent-time">19:29</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img19.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">John Wayne</span>
+										<span class="last-msg"><span class="msg">You: morning baby.</span><time datetime="19:29" class="sent-time">19:29</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img13.jpg" alt="image description">
+										<span class="status offline">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Anne Brown</span>
+										<span class="last-msg"><span class="msg">How are you today?</span><span class="sent-time">Mon</span></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img16.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Dorothy Angel</span>
+										<span class="last-msg"><span class="msg">I forgot to mention that there was</span><span class="sent-time">Sat</span></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img17.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Beatrice Johnson</span>
+										<span class="last-msg"><span class="msg">Kiss you</span><time datetime="02-16" class="sent-time">16 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img17.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Beatrice Johnson</span>
+										<span class="last-msg"><span class="msg">Kiss you</span><time datetime="02-16" class="sent-time">16 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img17.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Beatrice Johnson</span>
+										<span class="last-msg"><span class="msg">Kiss you</span><time datetime="02-16" class="sent-time">16 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img17.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Beatrice Johnson</span>
+										<span class="last-msg"><span class="msg">Kiss you</span><time datetime="02-16" class="sent-time">16 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img17.jpg" alt="image description">
+										<span class="status online">online</span>
+									</div>
+									<div class="contact-info">
+										<span class="name">Beatrice Johnson</span>
+										<span class="last-msg"><span class="msg">Kiss you</span><time datetime="02-16" class="sent-time">16 Feb</time></span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div class="avatar">
+										<img src="images/img18.jpg" alt="image description">
+									</div>
+									<div class="contact-info">
+										<span class="name">Chris Tyson</span>
+										<span class="last-msg"><span class="msg">I am leaving. Byee</span><time datetime="02-09" class="sent-time">9 Feb</time></span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="tab-content mt-auto" id="myTabContent">
+						<div class="tab-pane fade show active" id="chatRoom">
+							<div class="chat-body">
+								<ul class="chat-list">
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">to what countries can I send wires from balance in payoneer?</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+										<div class="chat-bubble sent">
+											<span class="text">because otherwise I wire the extra money to my company and then wire, so its a delay, this would not hurt 	the payees and current payment plans</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<time datetime="2018-03-29" class="date">3/29/2018</time>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">hi Pearl</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble received">
+											<span class="text">Please email client services they would know</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">they told me to talk to you</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">and I would feel better ifyou help :)</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="chat-footer">
+								<span class="smiley">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path opacity=".45" fill="#263238" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg>
+								</span>
+								<div class="form-group">
+									<textarea class="form-control" cols="30" rows="10" placeholder="Type a message"></textarea>
+								</div>
+								<span class="voice">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="#263238" fill-opacity=".45" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg>
+								</span>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="privateChat">
+							<div class="chat-body">
+								<ul class="chat-list">
+									<li>
+										<div class="chat-bubble received">
+											<span class="text">Please email client services they would know</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">they told me to talk to you</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">and I would feel better ifyou help :)</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">to what countries can I send wires from balance in payoneer?</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+										<div class="chat-bubble sent">
+											<span class="text">because otherwise I wire the extra money to my company and then wire, so its a delay, this would not hurt 	the payees and current payment plans</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<time datetime="2018-03-29" class="date">3/29/2018</time>
+									</li>
+									<li>
+										<div class="chat-bubble sent">
+											<span class="text">hi Pearl</span>
+											<span class="delivery-status">
+												<time datetime="22:18" class="sent-time">22:18</time>
+												<span class="status">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="16" height="15"><path fill="#4FC3F7" d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.879a.32.32 0 0 1-.484.033l-.358-.325a.319.319 0 0 0-.484.032l-.378.483a.418.418 0 0 0 .036.541l1.32 1.266c.143.14.361.125.484-.033l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.879a.32.32 0 0 1-.484.033L1.891 7.769a.366.366 0 0 0-.515.006l-.423.433a.364.364 0 0 0 .006.514l3.258 3.185c.143.14.361.125.484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z"></path></svg>
+												</span>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="chat-footer">
+								<span class="smiley">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path opacity=".45" fill="#263238" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg>
+								</span>
+								<div class="form-group">
+									<textarea class="form-control" cols="30" rows="10" placeholder="Type a message"></textarea>
+								</div>
+								<span class="voice">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="#263238" fill-opacity=".45" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-block">
+				<div class="container">
+					<div class="bio-block">
+						<div class="d-flex align-items-center bio-holder">
+							<div class="profile-picture">
+								<a href="#"><img class="img-fluid" src="images/profile-picture.jpg" alt="image description"></a>
+							</div>
+							<div class="follow-holder">
+								<!-- <a href="#" class="chat-link d-none d-lg-block"><img src="images/icon-chat.svg" alt="image description" width="48"></a> -->
+								<div class="bio-header d-none d-lg-flex align-items-lg-center">
+									<h2>tayloralesia <span class="verified"><i class="icon-star"></i></span></h2>
+									<a href="#" class="btn btn-secondary">Following</a>
+									<span class="price">$ 9.97</span>
+								</div>
+								<ul class="follow-info">
+									<li>
+										<span class="number">259</span>
+										<span class="text">posts</span>
+									</li>
+									<li>
+										<span class="number">2.1m</span>
+										<span class="text">followers</span>
+									</li>
+									<li>
+										<span class="number">40</span>
+										<span class="text">following</span>
+									</li>
+								</ul>
+								<div class="action-field d-lg-none">
+									<a href="#" class="btn btn-secondary">Following</a>
+									<!-- <a href="#" class="btn btn-primary btn-submit"><i class="icon-thunder"></i></a> -->
+								</div>
+								<p class="d-none d-lg-block"><span class="name">Taylor Alesia</span> trying to uncover the secret chik fil a sauce formula so i can rule the world</p>
+								<ul class="button-list d-none d-lg-flex">
+									<li><a href="timeline.html" class="btn btn-secondary">line</a></li>
+									<li><a href="#" class="btn btn-secondary">photo</a></li>
+									<li><a href="#" class="btn btn-secondary">video</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="bio-header d-lg-none">
+							<h2>Taylor Alesia <span class="verified"><i class="icon-star"></i></span></h2>
+							<p>trying to uncover the secret chik fil a sauce formula so i can rule the world</p>
+						</div>
+					</div>
+					<div class="gallery-block">
+						<nav class="gallery-menu d-lg-none">
+							<ul>
+								<li><a href="#">line <i class="icon-add"></i></a></li>
+								<li><a href="#">photo</a></li>
+								<li><a href="#">video</a></li>
+								<li><a href="#">go live <span class="online"></span></a></li>
+							</ul>
+						</nav>
+						<ul class="gallery-list">
+							<li><a href="images/img4.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb4.jpg" alt="image description"></a></li>
+							<li><a href="images/img5.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb5.jpg" alt="image description"></a></li>
+							<li><a href="images/img1.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb1.jpg" alt="image description"></a></li>
+							<li><a href="images/img3.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb3.jpg" alt="image description"></a></li>
+							<li><a href="images/img6.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb6.jpg" alt="image description"></a></li>
+							<li><a href="images/img7.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb7.jpg" alt="image description"></a></li>
+							<li><a href="images/img3.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb3.jpg" alt="image description"></a></li>
+							<li><a href="images/img8.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb8.jpg" alt="image description"></a></li>
+							<li><a href="images/img2.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb2.jpg" alt="image description"></a></li>
+							<li><a href="images/img9.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb9.jpg" alt="image description"></a></li>
+							<li><a href="images/img10.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb10.jpg" alt="image description"></a></li>
+							<li><a href="images/img1.jpg" data-fancybox="lightbox"><img class="img-fluid" src="images/thumb1.jpg" alt="image description"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer dark">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

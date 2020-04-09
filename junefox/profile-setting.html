@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="with-border">
+			<div class="container d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><i class="icon-compass"></i><span class="sr-only">Explore</span></a></li>
+						<li class="notification active"><a href="#"><i class="icon-heart"></i><span class="sr-only">Notification</span></a></li>
+						<li><a href="#"><i class="icon-user"></i><span class="sr-only">Profile</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="main-content-wrap">
+				<div class="container">
+					<div class="content-box row no-gutters">
+						<div class="sidenav col-md-4 col-lg-3">
+							<ul>
+								<li class="active"><a href="#">Edit Profile</a></li>
+								<li><a href="#">Change Password</a></li>
+								<li><a href="#">Authorized Applications</a></li>
+								<li><a href="#">Comments</a></li>
+								<li><a href="#">Email and SMS</a></li>
+								<li><a href="#">Manage Contacts</a></li>
+							</ul>
+						</div>
+						<div class="profile-setting col-md-8 col-lg-9">
+							<div class="profile-name-holder row align-items-center">
+								<div class="col-3 col-sm-4 col-lg-3 text-right">
+									<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+								</div>
+								<div class="name-holder col-9 col-sm-8 col-lg-9">
+									<span class="username">dorinhlucian</span>
+									<a href="#" class="edit-picture">Edit Profile Photo</a>
+								</div>
+							</div>
+							<form action="#" class="profile-form">
+								<div class="form-group row">
+									<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+									<div class="col-sm-8 col-lg-9">
+										<input type="text" class="form-control" id="name" value="Dorin Lucian">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+									<div class="col-sm-8 col-lg-9">
+										<input type="text" class="form-control" id="username" value="dorinhlucian">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+									<div class="col-sm-8 col-lg-9">
+										<input type="text" class="form-control" id="website">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+									<div class="col-sm-8 col-lg-9">
+										<textarea class="form-control" id="bio"></textarea>
+									</div>
+								</div>
+								<div class="row justify-content-end">
+									<div class="col-sm-8 col-lg-9">
+										<strong class="form-title">Private Information</strong>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+									<div class="col-sm-8 col-lg-9">
+										<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+									<div class="col-sm-8 col-lg-9">
+										<input type="tel" class="form-control" id="phone">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+									<div class="col-sm-8 col-lg-9">
+										<select id="gender" class="custom-select">
+											<option value="mal">Male</option>
+											<option value="fm">Female</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row checkbox-row">
+									<span class="col-sm-4 col-lg-3 label">Private Account</span>
+									<div class="col-sm-8 col-lg-9 pr-4">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="privateAccount">
+											<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group row checkbox-row">
+									<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+									<div class="col-sm-8 col-lg-9 pr-4">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="similarAccount">
+											<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-end pt-2 pt-xl-3">
+									<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+										<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+										<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JuneFox</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<!-- <script src="js/vids/pace.min.js"></script> -->
+	<!-- <script src="js/vids/manifest.js"></script> -->
+	<!-- <script src="js/vids/vendora.js"></script> -->
+	<!-- <script src="js/vids/app.js"></script> -->
+	<script src="js/jquery.main.js"></script>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery('.scrollbar-macosx').scrollbar();
+			$('.refine-sidebar .dropdown-menu').click(function(event){
+				event.stopPropagation();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container-fluid d-flex align-items-lg-center justify-content-between">
+				<div class="profile-name pl-md-3"><a href="#"><span class="first-letter">j</span>unefox</a></div>
+				<form action="#" class="search-form d-none d-lg-block">
+					<div class="form-group">
+						<i class="icon-search-thick"></i>
+						<input class="form-control" type="search" placeholder="Search">
+					</div>
+				</form>
+				<nav id="nav">
+					<ul>
+						<li class="search d-lg-none"><a href="#"><i class="icon-search"></i><span class="sr-only">Search</span></a></li>
+						<li><a href="discover-v6.html"><!-- <i class="icon-compass"></i> --><!-- <span class="sr-only"> -->Explore<!-- </span> --></a></li>
+						<li class="notification active"><a href="#"><!-- <i class="icon-heart"></i> --><!-- <span class="sr-only"> -->Notification<!-- </span> --></a></li>
+						<li><a href="#" data-toggle="modal" data-target="#profileSettingModal"><span class="avatar"><img src="images/img18.jpg" alt="James"></span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main">
+			<div class="users-section">
+				<div class="container d-flex align-items-start">
+					<div class="refine-sidebar">
+						<h4>Refine your results</h4>
+						<div class="refine-controls">
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<span class="all-options">All Ages</span>
+									<span class="specific-options">Ages<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu" x-placement="bottom-start">
+									<li class="dropdown-item">
+										<input type="checkbox" value="18-25" id="age0">
+										<label for="age0" title="18-25"><span></span>18-25</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="26-30" id="age1">
+										<label for="age1" title="26-30"><span></span>26-30</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="31-40" id="age2">
+										<label for="age2" title="31-40"><span></span>31-40</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="41-50" id="age3">
+										<label for="age3" title="41-50"><span></span>41-50</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="51+" id="age4">
+										<label for="age4" title="51+"><span></span>51+</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<span class="all-options">All Ethnicities</span>
+									<span class="specific-options">Ethnicities<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Asian" id="ethnicity0">
+										<label for="ethnicity0" title="Asian"><span></span>Asian</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Black / Ebony" id="ethnicity1">
+										<label for="ethnicity1" title="Black / Ebony"><span></span>Black / Ebony</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="East Indian" id="ethnicity2">
+										<label for="ethnicity2" title="East Indian"><span></span>East Indian</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Latino / Hispanic" id="ethnicity3">
+										<label for="ethnicity3" title="Latino / Hispanic"><span></span>Latino / Hispanic</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Middle Eastern" id="ethnicity4">
+										<label for="ethnicity4" title="Middle Eastern"><span></span>Middle Eastern</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Mixed" id="ethnicity5">
+										<label for="ethnicity5" title="Mixed"><span></span>Mixed</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Native American / Alaskan" id="ethnicity6">
+										<label for="ethnicity6" title="Native American / Alaskan"><span></span>Native American / Alaskan</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Pacific Islander" id="ethnicity7">
+										<label for="ethnicity7" title="Pacific Islander"><span></span>Pacific Islander</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="White / Caucasian" id="ethnicity8">
+										<label for="ethnicity8" title="White / Caucasian"><span></span>White / Caucasian</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Other" id="ethnicity9">
+										<label for="ethnicity9" title="Other"><span></span>Other</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Locations</span>
+									<span class="specific-options">Location<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="American" id="user-location0">
+										<label for="user-location0" title="United States"><span></span>United States</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="British" id="user-location1">
+										<label for="user-location1" title="United Kingdom"><span></span>United Kingdom</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Canadian" id="user-location2">
+										<label for="user-location2" title="Canada"><span></span>Canada</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Afghan" id="user-location3">
+										<label for="user-location3" title="Afghanistan"><span></span>Afghanistan</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Albanian" id="user-location4">
+										<label for="user-location4" title="Albania"><span></span>Albania</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Algerian" id="user-location5">
+										<label for="user-location5" title="Algeria"><span></span>Algeria</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="American Samoan" id="user-location6">
+										<label for="user-location6" title="American Samoa"><span></span>American Samoa</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Andorran" id="user-location7">
+										<label for="user-location7" title="Andorra"><span></span>Andorra</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Angolan" id="user-location8">
+										<label for="user-location8" title="Angola"><span></span>Angola</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Antiguans" id="user-location9">
+										<label for="user-location9" title="Antigua and Barbuda"><span></span>Antigua and Barbuda</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Argentinean" id="user-location10">
+										<label for="user-location10" title="Argentina"><span></span>Argentina</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Armenian" id="user-location11">
+										<label for="user-location11" title="Armenia"><span></span>Armenia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Arubans" id="user-location12">
+										<label for="user-location12" title="Aruba"><span></span>Aruba</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Australian" id="user-location13">
+										<label for="user-location13" title="Australia"><span></span>Australia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Austrian" id="user-location14">
+										<label for="user-location14" title="Austria"><span></span>Austria</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Bahamian" id="user-location15">
+										<label for="user-location15" title="Bahamas"><span></span>Bahamas</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Bangladeshi" id="user-location16">
+										<label for="user-location16" title="Bangladesh"><span></span>Bangladesh</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Barbudan" id="user-location17">
+										<label for="user-location17" title="Barbados"><span></span>Barbados</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Belarusian" id="user-location18">
+										<label for="user-location18" title="Belarus"><span></span>Belarus</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Belgian" id="user-location19">
+										<label for="user-location19" title="Belgium"><span></span>Belgium</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Belizean" id="user-location20">
+										<label for="user-location20" title="Belize"><span></span>Belize</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Bermudan" id="user-location21">
+										<label for="user-location21" title="Bermuda"><span></span>Bermuda</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Bosnian" id="user-location22">
+										<label for="user-location22" title="Bosnia-Herzegovina"><span></span>Bosnia-Herzegovina</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Brazilian" id="user-location23">
+										<label for="user-location23" title="Brazil"><span></span>Brazil</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Bulgarian" id="user-location24">
+										<label for="user-location24" title="Bulgaria"><span></span>Bulgaria</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cambodian" id="user-location25">
+										<label for="user-location25" title="Cambodia"><span></span>Cambodia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cape Verdean" id="user-location26">
+										<label for="user-location26" title="Cape Verde"><span></span>Cape Verde</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Central African" id="user-location27">
+										<label for="user-location27" title="Central Africa"><span></span>Central Africa</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Chilean" id="user-location28">
+										<label for="user-location28" title="Chile"><span></span>Chile</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Chinese" id="user-location29">
+										<label for="user-location29" title="China"><span></span>China</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Colombian" id="user-location30">
+										<label for="user-location30" title="Colombia"><span></span>Colombia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Congolese" id="user-location31">
+										<label for="user-location31" title="Congo, DR"><span></span>Congo, DR</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cocos Island" id="user-location32">
+										<label for="user-location32" title="Cook Islands"><span></span>Cook Islands</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Costa Rican" id="user-location33">
+										<label for="user-location33" title="Costa Rica"><span></span>Costa Rica</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Croatian" id="user-location34">
+										<label for="user-location34" title="Croatia"><span></span>Croatia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cuban" id="user-location35">
+										<label for="user-location35" title="Cuba"><span></span>Cuba</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cypriot" id="user-location36">
+										<label for="user-location36" title="Cyprus"><span></span>Cyprus</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Czech" id="user-location37">
+										<label for="user-location37" title="Czech Republic"><span></span>Czech Republic</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Danish" id="user-location38">
+										<label for="user-location38" title="Denmark"><span></span>Denmark</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Dominican" id="user-location39">
+										<label for="user-location39" title="Dominican Republic"><span></span>Dominican Republic</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Ecuadorean" id="user-location40">
+										<label for="user-location40" title="Ecuador"><span></span>Ecuador</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Egyptian" id="user-location41">
+										<label for="user-location41" title="Egypt"><span></span>Egypt</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Salvadoran" id="user-location42">
+										<label for="user-location42" title="El Salvador"><span></span>El Salvador</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Estonian" id="user-location43">
+										<label for="user-location43" title="Estonia"><span></span>Estonia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Ethiopian" id="user-location44">
+										<label for="user-location44" title="Ethiopia"><span></span>Ethiopia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Fijian" id="user-location45">
+										<label for="user-location45" title="Fiji"><span></span>Fiji</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Finnish" id="user-location46">
+										<label for="user-location46" title="Finland"><span></span>Finland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="French" id="user-location47">
+										<label for="user-location47" title="France"><span></span>France</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Georgian" id="user-location48">
+										<label for="user-location48" title="Georgia"><span></span>Georgia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="German" id="user-location49">
+										<label for="user-location49" title="Germany"><span></span>Germany</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Greek" id="user-location50">
+										<label for="user-location50" title="Greece"><span></span>Greece</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Greenlandic" id="user-location51">
+										<label for="user-location51" title="Greenland"><span></span>Greenland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Guadeloupe" id="user-location52">
+										<label for="user-location52" title="Guadeloupe"><span></span>Guadeloupe</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Guambat" id="user-location53">
+										<label for="user-location53" title="Guam"><span></span>Guam</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Guatemalan" id="user-location54">
+										<label for="user-location54" title="Guatemala"><span></span>Guatemala</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Guyanese" id="user-location55">
+										<label for="user-location55" title="Guyana"><span></span>Guyana</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Haitian" id="user-location56">
+										<label for="user-location56" title="Haiti"><span></span>Haiti</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Honduran" id="user-location57">
+										<label for="user-location57" title="Honduras"><span></span>Honduras</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Hungarian" id="user-location58">
+										<label for="user-location58" title="Hungary"><span></span>Hungary</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Icelander" id="user-location59">
+										<label for="user-location59" title="Iceland"><span></span>Iceland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Indian" id="user-location60">
+										<label for="user-location60" title="India"><span></span>India</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Iranian" id="user-location61">
+										<label for="user-location61" title="Iran"><span></span>Iran</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Iraqi" id="user-location62">
+										<label for="user-location62" title="Iraq"><span></span>Iraq</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Irish" id="user-location63">
+										<label for="user-location63" title="Ireland"><span></span>Ireland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Israeli" id="user-location64">
+										<label for="user-location64" title="Israel"><span></span>Israel</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Italian" id="user-location65">
+										<label for="user-location65" title="Italy"><span></span>Italy</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Jamaican" id="user-location66">
+										<label for="user-location66" title="Jamaica"><span></span>Jamaica</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Japanese" id="user-location67">
+										<label for="user-location67" title="Japan"><span></span>Japan</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Kenyan" id="user-location68">
+										<label for="user-location68" title="Kenya"><span></span>Kenya</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="North Korean" id="user-location69">
+										<label for="user-location69" title="Korea, North"><span></span>Korea, North</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="South Korean" id="user-location70">
+										<label for="user-location70" title="Korea, Republic of"><span></span>Korea, Republic of</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Latvian" id="user-location71">
+										<label for="user-location71" title="Latvia"><span></span>Latvia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Lebanese" id="user-location72">
+										<label for="user-location72" title="Lebanon"><span></span>Lebanon</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Liberian" id="user-location73">
+										<label for="user-location73" title="Liberia"><span></span>Liberia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Lithuanian" id="user-location74">
+										<label for="user-location74" title="Lithuania"><span></span>Lithuania</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Luxembourger" id="user-location75">
+										<label for="user-location75" title="Luxembourg"><span></span>Luxembourg</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Maltese" id="user-location76">
+										<label for="user-location76" title="Malta"><span></span>Malta</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Marshallese" id="user-location77">
+										<label for="user-location77" title="Marshall Islands"><span></span>Marshall Islands</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Martiniquais" id="user-location78">
+										<label for="user-location78" title="Martinique"><span></span>Martinique</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Mexican" id="user-location79">
+										<label for="user-location79" title="Mexico"><span></span>Mexico</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Micronesian" id="user-location80">
+										<label for="user-location80" title="Micronesia"><span></span>Micronesia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Moldovan" id="user-location81">
+										<label for="user-location81" title="Moldova"><span></span>Moldova</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Monacan" id="user-location82">
+										<label for="user-location82" title="Monaco"><span></span>Monaco</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Mongolian" id="user-location83">
+										<label for="user-location83" title="Mongolia"><span></span>Mongolia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Moroccan" id="user-location84">
+										<label for="user-location84" title="Morocco"><span></span>Morocco</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Dutch" id="user-location85">
+										<label for="user-location85" title="Netherlands"><span></span>Netherlands</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="New Zealander" id="user-location86">
+										<label for="user-location86" title="New Zealand"><span></span>New Zealand</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Nicaraguan" id="user-location87">
+										<label for="user-location87" title="Nicaragua"><span></span>Nicaragua</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Nigerian" id="user-location88">
+										<label for="user-location88" title="Nigeria"><span></span>Nigeria</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Norwegian" id="user-location89">
+										<label for="user-location89" title="Norway"><span></span>Norway</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Pakistani" id="user-location90">
+										<label for="user-location90" title="Pakistan"><span></span>Pakistan</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Panamanian" id="user-location91">
+										<label for="user-location91" title="Panama"><span></span>Panama</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Paraguayan" id="user-location92">
+										<label for="user-location92" title="Paraguay"><span></span>Paraguay</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Peruvian" id="user-location93">
+										<label for="user-location93" title="Peru"><span></span>Peru</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Filipino" id="user-location94">
+										<label for="user-location94" title="Philippines"><span></span>Philippines</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Polish" id="user-location95">
+										<label for="user-location95" title="Poland"><span></span>Poland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Portuguese" id="user-location96">
+										<label for="user-location96" title="Portugal"><span></span>Portugal</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Puerto Rican" id="user-location97">
+										<label for="user-location97" title="Puerto Rico"><span></span>Puerto Rico</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Romanian" id="user-location98">
+										<label for="user-location98" title="Romania"><span></span>Romania</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Russian" id="user-location99">
+										<label for="user-location99" title="Russian Federation"><span></span>Russian Federation</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Samoan" id="user-location100">
+										<label for="user-location100" title="Samoa"><span></span>Samoa</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Saudi" id="user-location101">
+										<label for="user-location101" title="Saudi Arabia"><span></span>Saudi Arabia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Senegalese" id="user-location102">
+										<label for="user-location102" title="Senegal"><span></span>Senegal</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Serbian" id="user-location103">
+										<label for="user-location103" title="Serbia"><span></span>Serbia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Sierra Leonean" id="user-location104">
+										<label for="user-location104" title="Sierra Leone"><span></span>Sierra Leone</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Slovakian" id="user-location105">
+										<label for="user-location105" title="Slovakia"><span></span>Slovakia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Slovenian" id="user-location106">
+										<label for="user-location106" title="Slovenia"><span></span>Slovenia</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Solomon Islande" id="user-location107">
+										<label for="user-location107" title="Solomon Islands"><span></span>Solomon Islands</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="South African" id="user-location108">
+										<label for="user-location108" title="South Africa"><span></span>South Africa</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Spanish" id="user-location109">
+										<label for="user-location109" title="Spain"><span></span>Spain</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Swedish" id="user-location110">
+										<label for="user-location110" title="Sweden"><span></span>Sweden</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Swiss" id="user-location111">
+										<label for="user-location111" title="Switzerland"><span></span>Switzerland</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Syrian" id="user-location112">
+										<label for="user-location112" title="Syrian"><span></span>Syrian</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Taiwanese" id="user-location113">
+										<label for="user-location113" title="Taiwan"><span></span>Taiwan</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Thai" id="user-location114">
+										<label for="user-location114" title="Thailand"><span></span>Thailand</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Tongan" id="user-location115">
+										<label for="user-location115" title="Tonga"><span></span>Tonga</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Trinidadian or Tobagonian" id="user-location116">
+										<label for="user-location116" title="Trinidad and Tobago"><span></span>Trinidad and Tobago</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Turkish" id="user-location117">
+										<label for="user-location117" title="Turkey"><span></span>Turkey</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Ugandan" id="user-location118">
+										<label for="user-location118" title="Uganda"><span></span>Uganda</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Ukrainian" id="user-location119">
+										<label for="user-location119" title="Ukraine"><span></span>Ukraine</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Uruguayan" id="user-location120">
+										<label for="user-location120" title="Uruguay"><span></span>Uruguay</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Vanuatuan" id="user-location121">
+										<label for="user-location121" title="Vanuatu"><span></span>Vanuatu</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Venezuelan" id="user-location122">
+										<label for="user-location122" title="Venezuela"><span></span>Venezuela</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Vietnamese" id="user-location123">
+										<label for="user-location123" title="Viet Nam"><span></span>Viet Nam</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="British Virgin Islander" id="user-location124">
+										<label for="user-location124" title="Virgin Islands-British"><span></span>Virgin Islands-British</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Virgin Islander" id="user-location125">
+										<label for="user-location125" title="Virgin Islands-US"><span></span>Virgin Islands-US</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Wallisian" id="user-location126">
+										<label for="user-location126" title="Wallis and Futuna"><span></span>Wallis and Futuna</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Zimbabwean" id="user-location127">
+										<label for="user-location127" title="Zimbabwe"><span></span>Zimbabwe</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<span class="all-options">All Occupations</span>
+									<span class="specific-options">Occupations<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Webcam Model" id="model-occupation0">
+										<label for="model-occupation0" title="Webcam Model"><span></span>Webcam Model</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Porn Star" id="model-occupation1">
+										<label for="model-occupation1" title="Porn Star"><span></span>Porn Star</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Actress" id="model-occupation2">
+										<label for="model-occupation2" title="Actress"><span></span>Actress</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Student" id="model-occupation3">
+										<label for="model-occupation3" title="Student"><span></span>Student</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Model" id="model-occupation4">
+										<label for="model-occupation4" title="Model"><span></span>Model</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Stripper" id="model-occupation5">
+										<label for="model-occupation5" title="Stripper"><span></span>Stripper</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Naughty Girl" id="model-occupation6">
+										<label for="model-occupation6" title="Naughty Girl"><span></span>Naughty Girl</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Dominatrix" id="model-occupation7">
+										<label for="model-occupation7" title="Dominatrix"><span></span>Dominatrix</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Fetish Model" id="model-occupation8">
+										<label for="model-occupation8" title="Fetish Model"><span></span>Fetish Model</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Glamour Model" id="model-occupation9">
+										<label for="model-occupation9" title="Glamour Model"><span></span>Glamour Model</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Super Model" id="model-occupation10">
+										<label for="model-occupation10" title="Super Model"><span></span>Super Model</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Public Figure" id="model-occupation11">
+										<label for="model-occupation11" title="Public Figure"><span></span>Public Figure</label>
+									</li>
+								</ul>
+								<input type="hidden" name="occupation" class="dd-values" data-category="occupation" value="">
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Hair Colors</span>
+									<span class="specific-options">Hair Colors<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Black" id="user-hair_color0">
+										<label for="user-hair_color0" title="Black"><span></span>Black</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Blonde" id="user-hair_color1">
+										<label for="user-hair_color1" title="Blonde"><span></span>Blonde</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Dark Blonde" id="user-hair_color2">
+										<label for="user-hair_color2" title="Dark Blonde"><span></span>Dark Blonde</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Platinum Blonde" id="user-hair_color3">
+										<label for="user-hair_color3" title="Platinum Blonde"><span></span>Platinum Blonde</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Brunette" id="user-hair_color4">
+										<label for="user-hair_color4" title="Brunette"><span></span>Brunette</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Dark Brown" id="user-hair_color5">
+										<label for="user-hair_color5" title="Dark Brown"><span></span>Dark Brown</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Redhead" id="user-hair_color6">
+										<label for="user-hair_color6" title="Redhead"><span></span>Redhead</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Auburn" id="user-hair_color7">
+										<label for="user-hair_color7" title="Auburn"><span></span>Auburn</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Blue" id="user-hair_color8">
+										<label for="user-hair_color8" title="Blue"><span></span>Blue</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Green" id="user-hair_color9">
+										<label for="user-hair_color9" title="Green"><span></span>Green</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Grey" id="user-hair_color10">
+										<label for="user-hair_color10" title="Grey"><span></span>Grey</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Pink" id="user-hair_color11">
+										<label for="user-hair_color11" title="Pink"><span></span>Pink</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Purple" id="user-hair_color12">
+										<label for="user-hair_color12" title="Purple"><span></span>Purple</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Orange" id="user-hair_color13">
+										<label for="user-hair_color13" title="Orange"><span></span>Orange</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Salt &amp;amp; Pepper" id="user-hair_color14">
+										<label for="user-hair_color14" title="Salt &amp;amp; Pepper"><span></span>Salt &amp;amp; Pepper</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Many" id="user-hair_color15">
+										<label for="user-hair_color15" title="Many"><span></span>Many</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Eye Colors</span>
+									<span class="specific-options">Eye Colors<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Black" id="user-eye_color0">
+										<label for="user-eye_color0" title="Black"><span></span>Black</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Blue" id="user-eye_color1">
+										<label for="user-eye_color1" title="Blue"><span></span>Blue</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Brown" id="user-eye_color2">
+										<label for="user-eye_color2" title="Brown"><span></span>Brown</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Grey" id="user-eye_color3">
+										<label for="user-eye_color3" title="Grey"><span></span>Grey</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Green" id="user-eye_color4">
+										<label for="user-eye_color4" title="Green"><span></span>Green</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Hazel" id="user-eye_color5">
+										<label for="user-eye_color5" title="Hazel"><span></span>Hazel</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Body Types</span>
+									<span class="specific-options">Body Types<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Slender" id="user-body_type0">
+										<label for="user-body_type0" title="Slender"><span></span>Slender</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Athletic and Toned" id="user-body_type1">
+										<label for="user-body_type1" title="Athletic and Toned"><span></span>Athletic and Toned</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="A few extra pounds" id="user-body_type2">
+										<label for="user-body_type2" title="A Few Extra Pounds"><span></span>A Few Extra Pounds</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="About Average" id="user-body_type3">
+										<label for="user-body_type3" title="About Average"><span></span>About Average</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Stocky" id="user-body_type4">
+										<label for="user-body_type4" title="Stocky"><span></span>Stocky</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Voluptuous" id="user-body_type5">
+										<label for="user-body_type5" title="Voluptuous"><span></span>Voluptuous</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Very Voluptuous" id="user-body_type6">
+										<label for="user-body_type6" title="Very Voluptuous"><span></span>Very Voluptuous</label>
+									</li>
+								</ul>
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Breast Types</span>
+									<span class="specific-options">Breast Types<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Natural" id="model-breast_type0">
+										<label for="model-breast_type0" title="Natural"><span></span>Natural</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Silicon" id="model-breast_type1">
+										<label for="model-breast_type1" title="Silicon"><span></span>Silicon</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Saline" id="model-breast_type2">
+										<label for="model-breast_type2" title="Saline"><span></span>Saline</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Cohesive Gel" id="model-breast_type3">
+										<label for="model-breast_type3" title="Cohesive Gel"><span></span>Cohesive Gel</label>
+									</li>
+								</ul>
+								<input type="hidden" name="breast_type" class="dd-values" data-category="breast_type" value="">
+							</div>
+							<div class="control-item">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<span class="all-options">All Breast Sizes</span>
+									<span class="specific-options">Breast Sizes<span class="options-amount"></span></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<input type="checkbox" value="Small" id="breast_size0">
+										<label for="breast_size0" title="Small: A-B"><span></span>Small: A-B</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Medium" id="breast_size1">
+										<label for="breast_size1" title="Medium: C-D"><span></span>Medium: C-D</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Large" id="breast_size2">
+										<label for="breast_size2" title="Large: DD-DDD-E"><span></span>Large: DD-DDD-E</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="checkbox" value="Extra large" id="breast_size3">
+										<label for="breast_size3" title="Extra large: F+"><span></span>Extra large: F+</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h4>Services</h4>
+						<div class="refine-controls">
+							<ul class="other-filters">
+								<li class="dropdown-item">
+									<input type="checkbox" value="membership" id="model-services0">
+									<label for="model-services0" title="Membership"><span></span>Membership</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="crush" id="model-services1">
+									<label for="model-services1" title="MV Crush"><span></span>MV Crush</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="skype" id="model-services2">
+									<label for="model-services2" title="Video Chat"><span></span>Video Chat</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="text" id="model-services3">
+									<label for="model-services3" title="Texting"><span></span>Texting</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="call" id="model-services4">
+									<label for="model-services4" title="Phone Number"><span></span>Phone Number</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="fundme" id="model-services5">
+									<label for="model-services5" title="Fund Me"><span></span>Fund Me</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="custom" id="model-services6">
+									<label for="model-services6" title="Custom Vid"><span></span>Custom Vid</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="contest" id="model-services7">
+									<label for="model-services7" title="MV Contest"><span></span>MV Contest</label>
+								</li>
+							</ul>
+						</div>
+						<h4>Extras</h4>
+						<div class="refine-controls">
+							<ul class="other-filters">
+								<li class="dropdown-item">
+									<input type="checkbox" value="tattoos" id="model-attributes0">
+									<label for="model-attributes0" title="Tattoos"><span></span>Tattoos</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="piercings" id="model-attributes1">
+									<label for="model-attributes1" title="Piercings"><span></span>Piercings</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="long_nails" id="model-attributes2">
+									<label for="model-attributes2" title="Long Nails"><span></span>Long Nails</label>
+								</li>
+							</ul>
+						</div>
+						<h4>Achievements</h4>
+						<div class="refine-controls">
+							<ul class="other-filters">
+								<li class="dropdown-item">
+									<input type="checkbox" value="awards-2018" id="model-achievements0" data-uncheck-names="&quot;awards-2016,awards-2017&quot;">
+									<label for="model-achievements0" title="MV Awards 2018"><span></span>MV Awards 2018</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="awards-2017" id="model-achievements1" data-uncheck-names="&quot;awards-2016,awards-2018&quot;">
+									<label for="model-achievements1" title="MV Awards 2017"><span></span>MV Awards 2017</label>
+								</li>
+								<li class="dropdown-item">
+									<input type="checkbox" value="awards-2016" id="model-achievements2" data-uncheck-names="&quot;awards-2017,awards-2018&quot;">
+									<label for="model-achievements2" title="MV Awards 2016"><span></span>MV Awards 2016</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="users-list">
+						<li>
+							<div class="preview preview-ready">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+									<video class="inline-video-preview-video animated fadeIn" muted="true" playsinline autoplay mutedautoplayonmobile loop preload>
+										<source type="video/mp4" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4">
+										<source type="video/ogg" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.ogg">
+									</video>
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_SM</a>
+							</div>
+						</li>
+						<li class="live-model">
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview preview-ready">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+									<video class="inline-video-preview-video animated fadeIn" muted="true" playsinline autoplay mutedautoplayonmobile loop preload>
+										<source type="video/mp4" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4">
+										<source type="video/ogg" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.ogg">
+									</video>
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_SM</a>
+							</div>
+						</li>
+						<li class="live-model">
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview preview-ready">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+									<video class="inline-video-preview-video animated fadeIn" muted="true" playsinline autoplay mutedautoplayonmobile loop preload>
+										<source type="video/mp4" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4">
+										<source type="video/ogg" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.ogg">
+									</video>
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_SM</a>
+							</div>
+						</li>
+						<li class="live-model">
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview preview-ready">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+									<video class="inline-video-preview-video animated fadeIn" muted="true" playsinline autoplay mutedautoplayonmobile loop preload>
+										<source type="video/mp4" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4">
+										<source type="video/ogg" src="https://www.quirksmode.org/html5/videos/big_buck_bunny.ogg">
+									</video>
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_SM</a>
+							</div>
+						</li>
+						<li class="live-model">
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img20.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Aerie_Sm</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img21.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Gaberiella</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img22.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Brooke Dillinger</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img23.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Naughtykitty93</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img24.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">myvixenfire</a>
+							</div>
+						</li>
+						<li>
+							<div class="preview">
+								<a href="#">
+									<img src="images/img25.jpg" alt="image description">
+								</a>
+							</div>
+							<div class="name">
+								<a href="#">Mary Cox</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="login-footer dark">
+			<div class="container">
+				<ul class="app-links">
+					<li><a href="#"><i class="icon-apple"></i>App Store</a></li>
+					<li><a href="#"><i class="icon-play"></i>Google Play</a></li>
+				</ul>
+				<div class="bottom-section">
+					<ul class="footer-link">
+						<li><a href="#">About</a></li>
+						<li><a href="#">Mobile</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Quick links</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<div class="row align-items-center">
+						<div class="col-sm-8">
+							<ul class="social-links">
+								<li><a href="#"><img src="images/youtube.png" width="85" alt="Subscribe our Channel"></a></li>
+								<li><a href="#"><img src="images/plus.svg" width="32" alt="Follow on Google Plus"></a></li>
+								<li><a href="#"><img src="images/facebook-like.png" width="80" alt="Like on Facebook"></a></li>
+								<li><a href="#"><img src="images/tweet.png" width="61" alt="Follow on Twitter"></a></li>
+								<li>
+									<a href="#" class="ig-link" target="_blank"><svg width="22" height="22"><defs><linearGradient id="instagram-color" x1="12.9%" x2="87.1%" y1="103%" y2="-3%"><stop stop-color="#FFB900" offset="0%"></stop><stop stop-color="#9100EB" offset="100%"></stop></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#instagram-color)" d="M22 19.3c0 1.5-1.2 2.7-2.8 2.7H3c-2 0-3-1.2-3-2.8V3c0-2 1.2-3 2.8-3H19c2 0 3 1.2 3 2.8v16.5z"></path><path fill="#FFF" d="M3 7c0-2.2 1.8-4 4-4h8c2.2 0 4 1.8 4 4v8c0 2.2-1.8 4-4 4H7c-2.2 0-4-1.8-4-4V7zm1 0c0-1.7 1.3-3 3-3h8c1.7 0 3 1.3 3 3v8c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7zm7 8c-2.3 0-4-1.7-4-4s1.7-4 4-4 4 1.7 4 4-1.7 4-4 4zm0-7c-1.6 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3-1.4-3-3-3zm4.4-.5c.5 0 1-.4 1-1 0-.4-.5-.8-1-.8s-1 .4-1 1c0 .4.5.8 1 .8z"></path></g></svg></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-4 text-right">
+							<span class="copyright">2018 <sup>&copy;</sup> JuneFoxx</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- setting modal -->
+	<div class="modal" id="profileSettingModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox">
+				<ul class="setting-elements">
+					<li><a href="#" data-toggle="modal" data-target="#editProfileModal" data-dismiss="modal">Edit Profile</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#changePassModal" data-dismiss="modal">Change Password</a></li>
+					<li><a href="#">Notifications</a></li>
+					<li><a href="#">Privacy and Security</a></li>
+					<li><a href="#">Log Out</a></li>
+					<li><a data-dismiss="modal" href="#">Cancel</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- edit profile modal -->
+	<div class="modal" id="editProfileModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="name" class="col-sm-4 col-lg-3 col-form-label">Name</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="name" value="Dorin Lucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="username" class="col-sm-4 col-lg-3 col-form-label">Username</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="username" value="dorinhlucian">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-sm-4 col-lg-3 col-form-label">Website</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="text" class="form-control" id="website">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="bio" class="col-sm-4 col-lg-3 col-form-label">Bio</label>
+							<div class="col-sm-8 col-lg-9">
+								<textarea class="form-control" id="bio"></textarea>
+							</div>
+						</div>
+						<div class="row justify-content-end">
+							<div class="col-sm-8 col-lg-9">
+								<strong class="form-title">Private Information</strong>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="email" class="col-sm-4 col-lg-3 col-form-label">Email</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="email" class="form-control" id="email" value="daredariuz@yahoo.com">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="phone" class="col-sm-4 col-lg-3 col-form-label">Phone Number</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="tel" class="form-control" id="phone">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="gender" class="col-sm-4 col-lg-3 col-form-label">Gender</label>
+							<div class="col-sm-8 col-lg-9">
+								<select id="gender" class="custom-select">
+									<option value="mal">Male</option>
+									<option value="fm">Female</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Private Account</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="privateAccount">
+									<label class="custom-control-label" for="privateAccount">When your account is private, only people you approve can see your photos and videos on Instagram. Your existing followers won't be affected</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row checkbox-row">
+							<span class="col-sm-4 col-lg-3 label">Similar Account Suggestions</span>
+							<div class="col-sm-8 col-lg-9 pr-4">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="similarAccount">
+									<label class="custom-control-label" for="similarAccount">Include your account when recommending similar accounts people might want to follow. <a href="#" class="info">[?]</a></label>
+								</div>
+							</div>
+						</div>
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary disabled mb-2 mb-sm-0">Submit</button>
+								<span class="link-disable"><a href="#">Temporarily disable my account</a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- change password modal -->
+	<div class="modal" id="changePassModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content setting-lightbox inner">
+				<div class="profile-setting">
+					<button data-toggle="modal" data-target="#profileSettingModal" data-dismiss="modal" class="btn-back"><i class="icon-angle-down"></i><span class="sr-only">back</span></button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="profile-name-holder row align-items-center">
+						<div class="col-3 col-sm-4 col-lg-3 text-right">
+							<div class="avatar"><a href="#"><img src="images/img11.jpg" alt="image description" width="47" height="47"></a></div>
+						</div>
+						<div class="name-holder col-9 col-sm-8 col-lg-9">
+							<span class="username">dorinhlucian</span>
+							<a href="#" class="edit-picture">Edit Profile Photo</a>
+						</div>
+					</div>
+					<form action="#" class="profile-form">
+						<div class="form-group row">
+							<label for="oldPass" class="col-sm-4 col-lg-3 col-form-label">Old Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="oldPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="newPass" class="col-sm-4 col-lg-3 col-form-label">New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="newPass">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="confirmPass" class="col-sm-4 col-lg-3 col-form-label">Confirm New Password</label>
+							<div class="col-sm-8 col-lg-9">
+								<input type="password" class="form-control" id="confirmPass">
+							</div>
+						</div>
+						
+						<div class="row justify-content-end pt-2 pt-xl-3">
+							<div class="col-md-11 col-lg-9 d-flex flex-column flex-sm-row align-items-center justify-content-between pr-md-5">
+								<button class="btn btn-primary mb-2 mb-sm-0">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Payment modal -->
+	<div class="modal fade" id="paymentModal" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content upload-lightbox event">
+				<div class="file-uploader py-2 px-3 py-sm-5 px-sm-6 px-lg-7">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<div class="form-group payment-form">
+						<div class="row align-items-center">
+							<div class="col-sm-auto">
+								<label class="mb-md-0" for="amount">Amount you want to add ($)</label>
+							</div>
+							<div class="col-sm-auto">
+								<input id="amount" type="text" class="form-control">
+							</div>
+						</div>
+					</div>
+					<h2 class="modal-title" id="paymentModalLabel">Make the payment using</h2>
+					<ul class="cards">
+						<li><a href="#"><img src="images/logo-visa-el.png" alt="Visa Electron"></a></li>
+						<li><a href="#"><img src="images/logo-american-express.png" alt="American Express"></a></li>
+						<li><a href="#"><img src="images/logo-mastercard.png" alt="MasterCard"></a></li>
+						<li><a href="#"><img src="images/logo-visa.png" alt="Visa"></a></li>
+						<li><a href="#"><img src="images/logo-maestro.png" alt="Maestro"></a></li>
+						<li><a href="#"><img src="images/logo-paypal.png" alt="Paypal"></a></li>
+					</ul>
+					<span class="or mb-2">or</span>
+					<form action="#" class="payment-form">
+						<h2>Enter credit card details</h2>
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="cardNumber">Card number</label>
+									<input id="cardNumber" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="form-group">
+									<label for="day">Day</label>
+									<select id="day" class="custom-select">
+										<option value="1">01</option>
+										<option value="2">02</option>
+										<option value="3">03</option>
+										<option value="4">04</option>
+										<option value="5">05</option>
+										<option value="6">06</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="form-group">
+									<label for="year">Year</label>
+									<select id="year" class="custom-select">
+										<option value="1">2018</option>
+										<option value="2">2019</option>
+										<option value="3">2020</option>
+										<option value="4">2021</option>
+										<option value="5">2022</option>
+										<option value="6">2023</option>
+										<option value="7">2024</option>
+										<option value="8">2025</option>
+										<option value="9">2026</option>
+										<option value="10">2027</option>
+										<option value="11">2028</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="form-group">
+									<label for="cvc">CVC</label>
+									<input id="cvc" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group">
+									<label for="fullName">Full Name</label>
+									<input id="fullName" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group">
+									<label for="country">Country</label>
+									<select id="country" class="custom-select">
+										<option value="1">United States</option>
+										<option value="2">United Kingdom</option>
+										<option value="3">Japan</option>
+										<option value="4">Sweden</option>
+										<option value="5">Romania</option>
+										<option value="6">Russia</option>
+										<option value="7">Brazil</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="city">City</label>
+									<input id="city" type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="form-group">
+									<label for="postalCode">Postal Code</label>
+									<input id="postalCode" type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="text-center pt-4">
+							<button class="btn btn-success">Add Balance</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -18,33 +18,32 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div class="window">
+		<div class="window dark">
 			<header class="mobile-header pb-0">
-				<div class="container-fluid d-flex align-items-center justify-content-between">
-					<div class="mobile-search">
-						<div class="form-group">
-							<i class="icon-search1"></i>
-							<input class="form-control" type="search" placeholder="Search">
+				<div class="container-fluid">
+					<div class="user-heading d-flex align-items-center">
+						<div class="user-image"><a href="#"><img src="images/img26.jpg" alt="image description"></a></div>
+						<div class="user-description">
+							<span class="status">Ashley going crazy tonight</span>
+							<p>She found a new boyfriend and wants to do it like she never done it before</p>
 						</div>
 					</div>
-					<div class="profile-avatar"><a href="#"><img src="images/img14.jpg" alt="image description"></a></div>
 				</div>
 				<div class="tablist">
 					<ul>
-						<li class="active"><a href="#">Messages</a></li>
-						<li><a href="#">active (99+)</a></li>
-						<li><a href="#">groups</a></li>
+						<li class="active"><a href="#">Chat</a></li>
+						<li><a href="#">Online</a></li>
+						<li><a href="#">Likes</a></li>
+						<li><a href="#">Replies</a></li>
 					</ul>
 				</div>
 			</header>
 			<main id="main" class="app-wrap d-flex flex-column justify-content-between">
 				<div class="contact-block">
-					<a href="#" class="new-message"><i class="icon-bubble"></i></a>
 					<ul class="contact-list">
 						<li>
 							<div class="avatar">
 								<a href="#"><img src="images/img15.jpg" alt="image description"></a>
-								<span class="status online">online</span>
 							</div>
 							<div class="contact-info">
 								<span class="name">Brittany Jordan</span>
@@ -63,7 +62,6 @@
 						<li>
 							<div class="avatar">
 								<a href="#"><img src="images/img13.jpg" alt="image description"></a>
-								<span class="status online">online</span>
 							</div>
 							<div class="contact-info">
 								<span class="name">Anne Brown</span>
@@ -82,7 +80,6 @@
 						<li>
 							<div class="avatar">
 								<a href="#"><img src="images/img17.jpg" alt="image description"></a>
-								<span class="status online">online</span>
 							</div>
 							<div class="contact-info">
 								<span class="name">Beatrice Johnson</span>
@@ -100,25 +97,17 @@
 						</li>
 					</ul>
 				</div>
-				<nav class="app-menu">
-					<ul>
-						<li class="active">
-							<a href="#"><i class="icon-home"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="icon-phone"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="icon-camera"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="icon-people"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="icon-game"></i></a>
-						</li>
-					</ul>
-				</nav>
+				<div class="chat-action">
+					<div class="form-group">
+						<span class="smiley-icon"><a href="#"><i class="icon-laugh"></i></a></span>
+						<input type="text" class="form-control" placeholder="Type a message...">
+						<div class="btn-holder">
+							<button class="btn-action"><i class="icon-paperclip"></i></button>
+							<button class="btn-action"><i class="icon-lens"></i></button>
+						</div>
+					</div>
+					<button class="btn-mic"><i class="icon-mic"></i></button>
+				</div>
 			</main>
 		</div>
 	</div>

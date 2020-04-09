@@ -12,6 +12,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js"></script>
+
 	<script src="js/jquery.main.js"></script>
 </head>
 <body>
@@ -32,7 +34,7 @@
 		<main id="main">
 			<div class="login-section">
 				<div class="container">
-					<div class="login-box">
+					<div class="login-box add mb-0">
 						<div class="left-column column">
 							<img class="img-fluid" src="images/img28.jpg" alt="image description">
 						</div>
@@ -73,6 +75,113 @@
 								<button href="#" class="btn btn-lg btn-secondary justify-content-center">Login</button>
 								<span class="alternate">Already a member? <a href="#">Login with Email</a></span>
 							</form>
+						</div>
+					</div>
+					<div class="info-wrap bg-white">
+						<div class="appearance-wrap setting d-none">
+							<div class="user-holder text-center">
+								<div class="container">
+									<div class="preview"><a href="#"><img class="img-fluid" src="images/img12.jpg" alt="image description"></a></div>
+									<strong class="name">Alice, 31</strong>
+									<span class="org">harvard</span>
+									<ul class="user-setting">
+										<li>
+											<a href="#">
+												<span class="icon"><i class="icon-preferences"></i></span>
+												<span class="text">settings</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="icon"><i class="icon-pencil"></i></span>
+												<span class="text">edit info</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="pictures v2">
+							<ul>
+								<li>
+									<a href="images/pic2.jpg" data-fancybox="lightbox" class="image">
+										<span class="bg-stretch"><img src="images/pic2.jpg" alt="image description"></span>
+									</a>
+								</li>
+								<li>
+									<a href="images/pic3.jpg" data-fancybox="lightbox" class="image">
+										<span class="bg-stretch"><img src="images/pic3.jpg" alt="image description"></span>
+									</a>
+								</li>
+								<li>
+									<a href="images/pic4.jpg" data-fancybox="lightbox" class="image">
+										<span class="bg-stretch"><img src="images/pic4.jpg" alt="image description"></span>
+									</a>
+								</li>
+								<li>
+									<a href="images/pic5.jpg" data-fancybox="lightbox" class="image">
+										<span class="bg-stretch"><img src="images/pic5.jpg" alt="image description"></span>
+									</a>
+								</li>
+								<li>
+									<a href="images/pic6.jpg" data-fancybox="lightbox" class="image">
+										<span class="bg-stretch"><img src="images/pic6.jpg" alt="image description"></span>
+									</a>
+								</li>
+								<li class="video">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/maSWcrEQmPA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</li>
+							</ul>
+						</div>
+						<div class="personal-details">
+							<div class="detail-section">
+								<div class="info-title">Event Title</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="10" class="form-control" placeholder="Add the event title"></textarea>
+										<i class="icon-angle-right"></i>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<div class="info-title">Price</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="10" class="form-control" placeholder="Set price">$4.99</textarea>
+										<i class="icon-angle-right"></i>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<strong class="info-title">Notification options</strong>
+								<div class="info-content d-flex align-items-center justify-content-between">
+									<span class="d-flex align-items-center setting-option">Newsletter to followers</span>
+									<div class="setting-value">
+										<span class="switch">
+											<input checked="checked" type="checkbox" class="switch" id="newsletter">
+											<label for="newsletter">Newsletter to followers</label>
+										</span>
+									</div>
+								</div>
+								<div class="info-content d-flex align-items-center justify-content-between">
+									<span class="d-flex align-items-center setting-option">Reminders to myself</span>
+									<div class="setting-value">
+										<span class="switch">
+											<input checked="checked" type="checkbox" class="switch" id="reminder">
+											<label for="reminder">Reminders to myself</label>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="detail-section">
+								<div class="info-title">about me</div>
+								<div class="info-content">
+									<div class="form-group">
+										<textarea cols="30" rows="2" class="form-control about" placeholder="Write something about you..."></textarea>
+										<span class="counter">500</span>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
